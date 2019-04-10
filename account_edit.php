@@ -7,8 +7,7 @@
 
   Copyright (c) 2003 osCommerce
 
-  Released under the GNU General Public License
-  
+  Released under the GNU General Public License  
   Copyright &copy; 2003-2005 Chain Reaction Works, Inc.
   
   Last Modified by : $Author$
