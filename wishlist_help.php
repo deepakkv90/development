@@ -1,7 +1,6 @@
 <?php
 /*
   $Id: wishlist_help.php,v 1.1.1.1 2004/03/04 23:38:03 ccwjr Exp $
-
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
