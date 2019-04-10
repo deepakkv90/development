@@ -1,0 +1,34 @@
+<?php
+/*
+  $Id: data_basicimport.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td class="main"><strong>EP Basic Import Screen</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epb_import.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      &nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Basic Change with EP Basic:</strong><br>
+      Easy Populate Basic is intended for backward compatibility with previous version of Easy Populate. This version has been reorganized and optimized so that more records can be inputed from one file. Froogle feed has been removed from this version and replaced by Data Feed. This version Is compatible with both Php 4 and 5.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Upload EP File for Import:</strong><br>
+      To import a file into your catalog it must be first generated or in EPB format. This is the products_model is the first column in the upload file. The file should have EPB as the first three characters in its file name or none at all. Click on the browse button to browse your local computer for the file to upload and insert. Upload will move the file from you local computer to the web server and import the data in the files to your databases. There is usually a limit within php which prevents files larger then 2mb from being uploaded. Also EP usually will only imports 400 to 500 lines of products, this version can do 2,000 plus. If a file it to large to upload because of PHP restrictions the FTP the file to the site and use "Import Data from file in temp/"</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Upload and Split a EP File:</strong><br>
+      Although it may not be needed, EP basic upload and split is available. Use the browse button to browse you local files and select the ile for uploading. It will be spilt into files limited by the configure setting $maxrecs as set in the epconfigure.php file. Each file name will be dated with the date the split was created.</td>
+  </tr>
+</table>

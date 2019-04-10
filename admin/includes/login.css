@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color : #333;
+  background-color : #FFF;
+  font-size : 11px;
+  font-family : Verdana, sans-serif;
+}
+a:link, a:visited {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #990000;
+}
+form {
+    margin: 0px;
+  margin-top:4px;
+  margin-left:50px;
+}
+.loginTable {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12em;
+  border: 1px solid #cccccc;
+  width: 568px;
+  background: #fff;
+  padding: 10px 0px 20px;
+}
+.loginTable h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  color:#1E6FB4;
+}
+.loginTable h2 img {
+  margin-left:5px; 
+  margin-top:7px;
+  }
+label {
+  display: block;
+  float: left;
+  margin:0;
+  font-size:12px;
+}
+input {
+  display: block;
+  float: left;
+  margin-bottom: 3px;
+}
+input { width: 227px;}
+
+br {
+  clear: left;
+}
+#button{
+  margin-top: 5px;
+  margin-bottom: 8px;
+  width: 90px;
+}
+td.forgot {  padding: 2px 10px;}
+.forgot span{
+  margin-top:5px;
+}
+.banner{
+  padding-top:14px; 
+  padding-right:25px;
+  vertical-align: text-top;
+}
+.banner img {
+  margin-top: 3px;
+}
+.info_message img {
+  border:0;
+  margin-right:8px;
+}
+.info_message{border:1px solid #f00;color:#f00;text-align:center;}
+/*.info_message b { color:#fff;}*/
+.buttonTable { padding:0;margin:auto;margin-right:10px;margin-bottom:2px;}
+.buttonTable .cancel {text-align:right; verticle-align:middle; width:130px;padding-right:8px;padding-top:3px;}
+.buttonTable .cancel a{color:#000;font-weight:bold;text-decoration:none;}
+.buttonTable .cancel a:hover{text-decoration:underline;}
+.buttonTable .submit {text-align:right;}
+.loginTable h4 { margin: 0px;padding: 0px;}
+#footer {
+  text-align: center;
+}
+.bold { font-weight:bold;}

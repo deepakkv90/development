@@ -1,0 +1,84 @@
+<?php
+/*
+  $Id: data_googleconfigure.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td class="main"><strong>Configuring Google Base Feed</strong><br>
+      &nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>List of Configurations:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/feed_google_new_config.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      You will start off by going to the list of configuration. This list all the data feed configurations for your store. If you have not done any configuration then there will be none in this list. You must have at least one configuration setup.<br>
+      To start a new configuration click on the new button under the list of configurations.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Configuration:</strong><br>
+      For a new configuration fill in all text boxes and check boxes of the check boxes except active. The click on insert. Once the information has been inserted in to the database.<br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/feed_google_config.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?></td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Settings and What they Mean:</strong><br>
+      <ul>
+        <li> Name of Feed  =&gt; This is the name of the feed as it will appear in the drop down boxes when data feed.</li>
+        <li> Product Feed Type  =&gt; Possible settings: Basicor Advance Only basic is available.</li>
+        <li>Data Feed Description =&gt; A short description of the feed configuration.</li>
+        <li> Data Feed File Type =&gt; Possible settings: none, products, business. For this you should choose product as the business feed is not yet in this package.</li>
+        <li> Feed Service =&gt; Possible settings: Google Base, Yahoo Choose Google Base, as Yahoo feed service has not been added.</li>
+        <li> Status  Set  =&gt; Possible settings:Active  Inactive For a new feed do not change this, until after your first insert. </li>
+        <li> File name =&gt; This is the file name you chose when you did your set up at Google Base.</li>
+        <li> Image URL =&gt; If you use a image url other then the default one for CRE Loaded then enter it here from the /images directory</li>
+        <li> Google Base FTP information =&gt; <em>Note: In order to use the TFP protion you must have  " --enable-ftp " in your php configuration file. You can check this by using the tools>serverinfo in the admin. Scroll down to the loaded modules section just below the HTTP Headers Information You should see: ftp FTP support enabled. If Not auto upload will not work.</em>
+          <ul>
+            <li> Google Base FTP Server Name =&gt; Enter the Google Base FTP server usually ftp://uploads.google.com</li>
+            <li> Google Base FTP User Name =&gt; Enter the Google Base FTP User Nameyou chose at Google Base</li>
+            <li> Google Base FTP Password =&gt; Enter the Google Base FTP password you chose at Google Base</li>
+            <li> Google Base FTP Directory =&gt; Enter the Google Base FTP Directoryyou chose at Google Base</li>
+          </ul>
+        </li>
+        <li> Google Base Advance Settings
+          <ul>
+            <li> Use store Currency:<br>
+              possible setting: False: Use store default currency,  True: Use currency listed below. If you choose false then the store currency will be used. if you choose true the enter a single currency below</li>
+            <li> Other currency:<br>
+              If above was True list a currency herecurrency</li>
+            <li>Convert Currency:<br>
+              Possible settings:False: Do not convert to currency  True: Convert currency.<br>
+              This is used if you wish to convert between currencies when a customer enters your store.</li>
+            <li>Use store language:<br>
+              Possible settings: False: Use store default language  True: Use language selected below <br>
+              If you choose false then the store language will be used. if you choose true the enter a single language below</li>
+            <li> Other language<br>
+              If above was True list a list language code here</li>
+            <li>Tax Class ID<br>
+              Enter the tax class ID number from the store or set to zero (0) for no tax calculation</li>
+          </ul>
+        </li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td valign="top" class="main">In addition to the Configuration screen in the admin, there is a configuration file to add additional fields to the Google base feed file. To use these additional items you must first change the Product Feed Type from the basic to advance. Once you have done this you can edit the google_configure.php file with a text editor. There is two kind of items here, the first is a logic switch which turns on and off the field. These add the correct label to the first line of the feed, and then add data to each product row,<br>
+      On/off switched:<br>
+      // 0 == do not show qty in stock 1 = show  qty in stock<br>
+      $quantity = 1; <br>
+      Next there is default data entries, these allow default data to be entered into the feed file.<br>
+      Default data: <br>
+      $default_currency = "USD";  //this is not binary. <br>
+      The additioanl feilds currently in the Google Feed are: quantity, currency, ship_to, age_range, made_in</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main">Once you have finished with the configuration and either Inserted or saved it the click on Google Base again in the side box. This will take you to the main run screen.</td>
+  </tr>
+</table>

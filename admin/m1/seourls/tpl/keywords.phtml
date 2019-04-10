@@ -1,0 +1,55 @@
+<script type="text/javascript">
+var M1SEOK = {};
+M1SEOK.search_keywords_url = '<?php echo $this->url('m1_seourls.ajax.php', 'action=seach_keywords'); ?>';
+M1SEOK.details_url = '<?php echo $this->url('m1_seourls.ajax.php', 'action=keywords_details'); ?>';
+M1SEOK.details_save_url = '<?php echo $this->url('m1_seourls.ajax.php', 'action=keywords_details_save'); ?>';
+M1SEOK.current_keywords_type = 'category';
+M1SEOK.languages = <?php echo $tpl->lang_arr ?>;
+</script>
+<div class="type-select-block">
+    <div class="type-current-line">
+    	Currently editing <span class="type-current">Categories</span> <a href="#" class="m1p_orange change-type">Change...</a>
+    </div>
+    <div class="type-select">
+    	<?php foreach ($tpl->macro_list as $type => $title) : ?>
+    		<a href="#" class="m1p_orange type-selectnew" rel="<?php echo $type ?>"><?php echo $title ?></a>
+    	<?php endforeach; ?>
+    </div>
+    
+</div>
+<div class="keyword-editing-block">
+	<div class="type-search-block">
+		Search:<br />
+    	<input type="text" class="type-search-keyword"/>
+    	&nbsp;&nbsp;
+    	<button style=" " class="type-search">
+        	Search
+        	<img class="type-searching" src="<?php echo $this->getAdminWebDir() ?>m1/seourls/tpl/images/searching.gif" align="absmiddle"/>
+    	</button>
+    </div>
+    <div class="entities-list">
+    </div>
+    <div style="float: left; width: 511px; margin: 5px 5px 5px 20px;">
+    	<span class="details-placeholder">Please select <span class="type-current">Categories</span> to edit keywords</span>
+    	<div class="details-loading-block">
+    		<img class="details-loading" src="<?php echo $this->getAdminWebDir() ?>m1/seourls/tpl/images/details-loading.gif" align="absmiddle"/>
+    		Loading...
+    	</div>
+    	<div class="keyword-editing-panel">
+    		<div class="editpanel-heading">
+    			Currently editing SEO Keywords for <span class="type-current-name"></span> (id <span class="current-entity-id"></span>)
+    		</div>
+    		<div class="editpanel-keywords-controls">
+    			<!-- here will be controls to edit keywords -->
+    		</div>
+    		<div style="width: 120px; margin: 0 auto;">
+    		<button class="editpanel-save-details">
+    			Save
+    			<img class="details-saving" src="<?php echo $this->getAdminWebDir() ?>m1/seourls/tpl/images/searching.gif" align="absmiddle"/>
+    		</button>
+    		<span class="editpanel-save-result"></span>
+    		</div>
+    	</div>
+    </div>
+</div>
+<br />

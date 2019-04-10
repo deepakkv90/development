@@ -1,0 +1,27 @@
+<div id="outercontainer">
+	<table cellpadding="0" cellspacing="0" width="100%" border=0>
+		<tr>
+			<td background="<?php echo $this->_tpl_dir ?>images/logo_bg_n.gif" valign=top width="210" height=79><a href="<?php $tpl->index_url ?>"><img src="m1/seourls/tpl/images/logo.gif" alt="SEO Urls" border="0"></a></td>
+			<td background="<?php echo $this->_tpl_dir ?>images/logo_bg_fill.gif">&nbsp;</td>
+			<td background="<?php echo $this->_tpl_dir ?>images/logo_bg2_n.gif" width=494 valign=bottom style="text-align:right;padding:0 10px 7px 0;color:white; font-family: tahoma; font-size: 9px;">
+				<a title="<?php echo $tpl->m1_seourls_company_name ?>" href="<?php echo $tpl->m1_seourls_company_url ?>" target="_blank" style="color:white; font-family: tahoma; font-size: 9px;"><?php echo $tpl->m1_seourls_company_name ?></a>
+			</td>
+		</tr>
+	</table>
+    <div id="makeadealMenu">
+    	<?php foreach ($tpl->head_menu as $item) : ?>
+    		<a href="<?php echo $item[0] ?>" class="m1p_orange" <?php echo $item[2] ?>><?php echo $item[1] ?></a>
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	<?php endforeach; ?>
+    </div>
+    <div class="m1p_title" align="center">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td background="<?php echo $this->_tpl_dir ?>images/title_bg_left.gif" width="21" height="29">&nbsp;</td>
+                <td background="<?php echo $this->_tpl_dir ?>images/title_bg_fill.gif" id="titletext"><?php echo $tpl->section_name ?></td>
+                <td background="<?php echo $this->_tpl_dir ?>images/title_bg_right.gif" width="12" height="29"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="m1p_content">

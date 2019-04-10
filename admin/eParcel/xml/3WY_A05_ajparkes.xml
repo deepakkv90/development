@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCMS xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.auspost.com.au/xml/pcms">
+	<SendPCMSManifest>
+		<header>
+			<TransactionDateTime>2013-03-26T14:30:41.0Z</TransactionDateTime>
+			<TransactionId>12</TransactionId>
+			<TransactionSequence>12</TransactionSequence>
+			<ApplicationId>MERCHANT</ApplicationId>
+		</header>
+		<body>
+			<PCMSManifest>
+				<MerchantLocationId>3WY</MerchantLocationId>
+				<ManifestNumber>A05</ManifestNumber>
+				<DateSubmitted>2013-03-26T14:30:41.0Z</DateSubmitted>
+				<DateLodged>2013-03-26T14:30:41.0Z</DateLodged>
+				<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000087</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Mirella Hoseit</DeliveryName>
+					<DeliveryAddressLine1>GPO BOX 1201</DeliveryAddressLine1>
+					<DeliverySuburb>BRISBANE</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4001</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000087010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000008701022704001</BarcodeArticleNumber>
+						<ActualWeight>0.06</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000285</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>John Dellamarta</DeliveryName>
+					<DeliveryAddressLine1>157 Victoria Parade</DeliveryAddressLine1>
+					<DeliverySuburb>COLLINGWOOD</DeliverySuburb>
+					<DeliveryStateCode>VIC</DeliveryStateCode>
+					<DeliveryPostcode>3066</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000285010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000028501022703066</BarcodeArticleNumber>
+						<ActualWeight>0.27</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000306</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>SPAR URUNGA</DeliveryName>
+					<DeliveryAddressLine1>Shop 1</DeliveryAddressLine1>
+					<DeliverySuburb>URUNGA</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2455</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000306010229</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000030601022902455</BarcodeArticleNumber>
+						<ActualWeight>0.15</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000315</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Trevor Thomson</DeliveryName>
+					<DeliveryAddressLine1>PO Box 20</DeliveryAddressLine1>
+					<DeliverySuburb>Tewatin</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4566</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000315010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000031501022704566</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000366</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Tina Mavritsakis</DeliveryName>
+					<DeliveryAddressLine1>1A Harris Road</DeliveryAddressLine1>
+					<DeliverySuburb>FIVE DOCK</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2046</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000366010221</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000036601022102046</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000411</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Tracy Howe</DeliveryName>
+					<DeliveryAddressLine1>PO Box 168</DeliveryAddressLine1>
+					<DeliverySuburb>Theodore</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4719</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000411010220</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000041101022004719</BarcodeArticleNumber>
+						<ActualWeight>0.49</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000424</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Retail Operations</DeliveryName>
+					<DeliveryAddressLine1>Level 6, 10 Waterloo Street</DeliveryAddressLine1>
+					<DeliverySuburb>Surry Hills, Sydney</DeliverySuburb>
+					<DeliveryStateCode>AL</DeliveryStateCode>
+					<DeliveryPostcode>2010</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000424010224</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000042401022402010</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000437</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Julie Stephenson</DeliveryName>
+					<DeliveryAddressLine1>94-120 Springwood Rd</DeliveryAddressLine1>
+					<DeliverySuburb>Springwood</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4127</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000437010228</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000043701022804127</BarcodeArticleNumber>
+						<ActualWeight>0.14</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000438</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Jodi Evans</DeliveryName>
+					<DeliveryAddressLine1>Unit 1</DeliveryAddressLine1>
+					<DeliverySuburb>CANNONVALE</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4802</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000438010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000043801022704802</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000451</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Lynn Ward</DeliveryName>
+					<DeliveryAddressLine1>1 Kooba Street</DeliveryAddressLine1>
+					<DeliverySuburb>Naradhan</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2669</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000451010228</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000045101022802669</BarcodeArticleNumber>
+						<ActualWeight>0.06</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000469</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Cassi-jayde Tuahine</DeliveryName>
+					<DeliveryAddressLine1>2/14 Deighton street</DeliveryAddressLine1>
+					<DeliverySuburb>Mount Isa</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4825</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000469010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000046901022704825</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000498</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Clare Kelder</DeliveryName>
+					<DeliveryAddressLine1>20 Cliff Street</DeliveryAddressLine1>
+					<DeliverySuburb>Melbourne</DeliverySuburb>
+					<DeliveryStateCode>VIC</DeliveryStateCode>
+					<DeliveryPostcode>3141</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000498010229</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000049801022903141</BarcodeArticleNumber>
+						<ActualWeight>0.19</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000516</ConsignmentNumber>
+					<ChargeCode>X1</ChargeCode>
+					<DeliveryName>Leah Vogler</DeliveryName>
+					<DeliveryAddressLine1>21 Swan St</DeliveryAddressLine1>
+					<DeliverySuburb>Semaphore</DeliverySuburb>
+					<DeliveryStateCode>SA</DeliveryStateCode>
+					<DeliveryPostcode>5019</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000516010224</ArticleNumber>
+						<BarcodeArticleNumber>997001613WY000051601022405019</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000521</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Diane Logan</DeliveryName>
+					<DeliveryAddressLine1>PO BOX 3181</DeliveryAddressLine1>
+					<DeliverySuburb>Clontarf</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4019</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000521010226</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000052101022604019</BarcodeArticleNumber>
+						<ActualWeight>0.19</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000541</ConsignmentNumber>
+					<ChargeCode>X1</ChargeCode>
+					<DeliveryName>Oakenden State School </DeliveryName>
+					<DeliveryAddressLine1>177 Oakenden-School Road</DeliveryAddressLine1>
+					<DeliverySuburb>Sarina</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4737</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000541010220</ArticleNumber>
+						<BarcodeArticleNumber>997001613WY000054101022004737</BarcodeArticleNumber>
+						<ActualWeight>0.19</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000585</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Kelly Stowe</DeliveryName>
+					<DeliveryAddressLine1>Unit 2/ 500 Gympie Road</DeliveryAddressLine1>
+					<DeliverySuburb>STRATHPINE</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4500</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000585010224</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000058501022404500</BarcodeArticleNumber>
+						<ActualWeight>0.1</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000611</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Valerie Burgess</DeliveryName>
+					<DeliveryAddressLine1>116/118 Main Street</DeliveryAddressLine1>
+					<DeliverySuburb>West Wyalong</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2671</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000611010228</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000061101022802671</BarcodeArticleNumber>
+						<ActualWeight>0.21</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000619</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Michelle Bramley</DeliveryName>
+					<DeliveryAddressLine1>Shop 3/26-32 Ewos Parade</DeliveryAddressLine1>
+					<DeliverySuburb>Cronulla</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2230</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000619010220</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000061901022002230</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000679</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Andrea Etheridge</DeliveryName>
+					<DeliveryAddressLine1>44 Latrobe Ave</DeliveryAddressLine1>
+					<DeliverySuburb>Helensvale</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4212</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000679010222</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000067901022204212</BarcodeArticleNumber>
+						<ActualWeight>0.13</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000698</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>  Leonardi</DeliveryName>
+					<DeliveryAddressLine1>Level 30,Aurora Place  88 Phillip Street</DeliveryAddressLine1>
+					<DeliverySuburb>Sydney</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2000</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000698010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000069801022702000</BarcodeArticleNumber>
+						<ActualWeight>0.38</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000713</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName> Marilyn Lafferty</DeliveryName>
+					<DeliveryAddressLine1>PO Box 33</DeliveryAddressLine1>
+					<DeliverySuburb>Everton Park</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4053</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000713010225</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000071301022504053</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000715</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Lyn Lindley</DeliveryName>
+					<DeliveryAddressLine1>Wollongong Hospital</DeliveryAddressLine1>
+					<DeliverySuburb>Wollongong</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2500</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000715010223</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000071501022302500</BarcodeArticleNumber>
+						<ActualWeight>0.11</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000717</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Danielle Ellicott</DeliveryName>
+					<DeliveryAddressLine1>PO BOX 82</DeliveryAddressLine1>
+					<DeliverySuburb>GATTON</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4343</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000717010221</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000071701022104343</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000726</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Julie Nagy</DeliveryName>
+					<DeliveryAddressLine1>64 Julie Street</DeliveryAddressLine1>
+					<DeliverySuburb>Crestmead</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4132</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000726010229</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000072601022904132</BarcodeArticleNumber>
+						<ActualWeight>0.09</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000728</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Gabrielle Charlesworth</DeliveryName>
+					<DeliveryAddressLine1>94 Bulli Rd</DeliveryAddressLine1>
+					<DeliverySuburb>Parramatta</DeliverySuburb>
+					<DeliveryStateCode>NSW</DeliveryStateCode>
+					<DeliveryPostcode>2146</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000728010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000072801022702146</BarcodeArticleNumber>
+						<ActualWeight>0.09</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000729</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Graeme Stewart</DeliveryName>
+					<DeliveryAddressLine1>153 Montague Street</DeliveryAddressLine1>
+					<DeliverySuburb>SOUTH MELBOURNE</DeliverySuburb>
+					<DeliveryStateCode>VIC</DeliveryStateCode>
+					<DeliveryPostcode>3205</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000729010226</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000072901022603205</BarcodeArticleNumber>
+						<ActualWeight>0.05</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000730</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Adora Longano</DeliveryName>
+					<DeliveryAddressLine1>1815 Currumbin Creek Rd</DeliveryAddressLine1>
+					<DeliverySuburb>Currumbin Valley</DeliverySuburb>
+					<DeliveryStateCode>AL</DeliveryStateCode>
+					<DeliveryPostcode>4223</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000730010222</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073001022204223</BarcodeArticleNumber>
+						<ActualWeight>0.06</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000731</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>David Magoffin</DeliveryName>
+					<DeliveryAddressLine1>PO BOX 2</DeliveryAddressLine1>
+					<DeliverySuburb>SUNNYBANK</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4109</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000731010221</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073101022104109</BarcodeArticleNumber>
+						<ActualWeight>0.13</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000732</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName> Michelle Jones</DeliveryName>
+					<DeliveryAddressLine1>PO Box 336</DeliveryAddressLine1>
+					<DeliverySuburb>Kingaroy</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4610</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000732010220</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073201022004610</BarcodeArticleNumber>
+						<ActualWeight>0.06</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000733</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Angelique Aizlewood</DeliveryName>
+					<DeliveryAddressLine1>50 Graham Road</DeliveryAddressLine1>
+					<DeliverySuburb>Carseldine</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4034</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000733010229</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073301022904034</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000734</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName> LEANNE WHEELER</DeliveryName>
+					<DeliveryAddressLine1>38 Maine Road</DeliveryAddressLine1>
+					<DeliverySuburb>Clontarf</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4019</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000734010228</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073401022804019</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000738</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Mia Ginnivan</DeliveryName>
+					<DeliveryAddressLine1>Flr 4, Executive Bldg. 100 George St</DeliveryAddressLine1>
+					<DeliverySuburb>BRISBANE</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4000</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000738010224</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073801022404000</BarcodeArticleNumber>
+						<ActualWeight>0.1</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000739</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Margaret Tren</DeliveryName>
+					<DeliveryAddressLine1>19 Fairlie Terrace</DeliveryAddressLine1>
+					<DeliverySuburb>SALISBURY</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4107</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000739010223</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000073901022304107</BarcodeArticleNumber>
+						<ActualWeight>1.25</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000746</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Staples Australia </DeliveryName>
+					<DeliveryAddressLine1>Door 7 Promo</DeliveryAddressLine1>
+					<DeliverySuburb>RICHLANDS</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4077</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000746010223</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000074601022304077</BarcodeArticleNumber>
+						<ActualWeight>0.88</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000751</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Paul Stanton</DeliveryName>
+					<DeliveryAddressLine1>95 Erina Street</DeliveryAddressLine1>
+					<DeliverySuburb>Gosford</DeliverySuburb>
+					<DeliveryStateCode>AL</DeliveryStateCode>
+					<DeliveryPostcode>2250</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000751010225</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000075101022502250</BarcodeArticleNumber>
+						<ActualWeight>0.08</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000780</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Brenda Eyre</DeliveryName>
+					<DeliveryAddressLine1>Jabiru Street</DeliveryAddressLine1>
+					<DeliverySuburb>Longreach</DeliverySuburb>
+					<DeliveryStateCode>QLD</DeliveryStateCode>
+					<DeliveryPostcode>4730</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000780010227</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000078001022704730</BarcodeArticleNumber>
+						<ActualWeight>0.2</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000786</ConsignmentNumber>
+					<ChargeCode>S1</ChargeCode>
+					<DeliveryName>Larissa Giblett</DeliveryName>
+					<DeliveryAddressLine1>77 Barron Street</DeliveryAddressLine1>
+					<DeliverySuburb>Boyup Brook</DeliverySuburb>
+					<DeliveryStateCode>AL</DeliveryStateCode>
+					<DeliveryPostcode>6244</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000786010221</ArticleNumber>
+						<BarcodeArticleNumber>997001603WY000078601022106244</BarcodeArticleNumber>
+						<ActualWeight>0.07</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			<PCMSConsignment>												
+					<ConsignmentNumber>3WY0000900</ConsignmentNumber>
+					<ChargeCode>X1</ChargeCode>
+					<DeliveryName>Ken Mathews</DeliveryName>
+					<DeliveryAddressLine1>Leonard E. Buck Everyman&#039;s CentreArmy Logistics Training</DeliveryAddressLine1>
+					<DeliverySuburb>Bandiana</DeliverySuburb>
+					<DeliveryStateCode>VIC</DeliveryStateCode>
+					<DeliveryPostcode>3694</DeliveryPostcode>
+					<DeliveryCountryCode>AU</DeliveryCountryCode>
+					<IsInternationalDelivery>false</IsInternationalDelivery>
+					<ReturnName>AJ PARKES AND CO PTY LTD</ReturnName>
+					<ReturnAddressLine1>PO BOX 234</ReturnAddressLine1>
+					<ReturnSuburb>SALISBURY</ReturnSuburb>
+					<ReturnStateCode>QLD</ReturnStateCode>
+					<ReturnPostcode>4107</ReturnPostcode>
+					<ReturnCountryCode>AU</ReturnCountryCode>
+					<CreatedDateTime>2013-03-26T14:30:41.106+11:00</CreatedDateTime>
+					<IsSignatureRequired>Y</IsSignatureRequired>
+					<DeliverPartConsignment>N</DeliverPartConsignment>
+					<ContainsDangerousGoods>false</ContainsDangerousGoods>
+					<PCMSDomesticArticle>
+						<ArticleNumber>3WY0000900010229</ArticleNumber>
+						<BarcodeArticleNumber>997001613WY000090001022903694</BarcodeArticleNumber>
+						<ActualWeight>0.14</ActualWeight>
+						<IsTransitCoverRequired>N</IsTransitCoverRequired>
+						<ContentsItem/>
+					</PCMSDomesticArticle>
+					</PCMSConsignment>
+			</PCMSManifest>
+		</body>
+	</SendPCMSManifest>
+</PCMS>

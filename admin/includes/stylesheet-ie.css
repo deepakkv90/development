@@ -1,0 +1,72 @@
+/* Body */
+
+#body {
+  padding: 0;
+}
+.body-table {
+  width: expression(document.body.clientWidth - 24);
+  margin: 0 12px;
+}
+
+.button-container {
+  line-height: 14px;
+}
+
+.box-top-left {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-topleft.png', sizingMethod='crop');
+}
+.box-top {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-top.png', sizingMethod='scale');
+}
+.box-top-right {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-topright.png', sizingMethod='crop');
+}
+
+.box-left {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-left.png', sizingMethod='scale');
+}
+.box-right {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-right.png', sizingMethod='scale');
+}
+
+.box-bottom-left {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-bottomleft.png', sizingMethod='crop');
+}
+.box-bottom {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-bottom.png', sizingMethod='scale');
+}
+.box-bottom-right {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/window-bottomright.png', sizingMethod='crop');
+}
+
+.nav-item-menu-head {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/nav-item-menu-head.png', sizingMethod='crop');
+}
+.nav-item-menu-body {
+/*
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/nav-item-menu-background-gray-long.png', sizingMethod='crop');
+*/
+}
+.nav-item-menu-foot {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/nav-item-menu-foot.png', sizingMethod='crop');
+}
+
+#toolbar-shadow {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/toolbar-shadow.png', sizingMethod='scale');
+}
+#demo-header-container {
+  background: none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/demo-header-background.png', sizingMethod='scale');
+}

@@ -1,0 +1,67 @@
+<!-- Begin help index.html-->
+By: Julian Brown, julian@jlbprof.com<br>
+Updated by: Tom O'Neill (AKA zip1)
+
+<UL>
+<LI><A HREF="#WHAT">What is this?</A></LI>
+<LI><A HREF="#TASK">Specific Task Help</a></LI>
+<LI><A HREF="#PROBLEM">What to do if you have a problem</A></LI>
+<LI><A HREF="#CHANGES">Changes from last version</A></LI>
+</UL>
+
+<H3><A NAME="WHAT">What is this?</a></H3>
+<P>
+This script allows you to quickly edit almost all displayed text on your Cre Loaded language files.
+It is intended to replace define_languages.php, as the current define_languages.php has several problem.
+</P>
+<P>
+Text is store in two places, the database and language defines files. Language Define Editor is
+entended to edit the language define file within the /languages directory or a sub directory. All language defines
+files should reside in the /languages directory. If they do not then the contributon does not
+meet OSC or Cre Loaded standerds
+</P><br>
+<H3><A NAME="TASK">Specific Task Help</H3></a><br>
+&nbsp;&nbsp; 1. Identifying the text to edit.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   a. Note the file name in the browser url box.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   b. Next note the text you want to change.<br><br>
+&nbsp;&nbsp; 2. Finding the correct file: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;   a. Go to tools > Define Languages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   b. Select the directory the define file resides in.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;   c. Click on the file name of the file.<br><br>
+&nbsp;&nbsp; 3. Searching for files:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    a. Go to tools > Define Languages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    b. Select the directory the define file resides in.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    c. In the search box type in all or part of the file name without the .php<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    d. This will bring up a list of files that contain all or part of
+the text you type in the search box. click on the file name you wish to edit.<br><br>
+
+You can also go directly to a particular file and modify the text in that file.<br>
+
+
+<H3><A NAME="PROBLEM">What to do if you have a problem</H3></a><br>
+<P>
+Language define files have variables in them. If for some reason one of these get changed you can always revert back
+to the file before editng by clicking on restore. A restore button will apear after you save your edits.
+click on the &quot;Restore File&quot; button at the top of the page.  The file will then take on
+the contents it had prior to the last change.
+
+You should always check your changes between each save.
+</P>
+<P>
+This works both in MS1 and MS2.
+<br></P>
+
+<H3><A NAME="CHANGES">Added and changed features</H3></a><br>
+1. Reorganized file internals,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. moved functions to function file<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. converted some function calls to actions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. added tep form funtions instead of html forms<br>
+2. Added images buttons instead of HTML submits<br>
+3. Removed lines around each text define to contribution looks like it fits Cre Loaded Better<br>
+4. Add ability to edit defines on other sub directories beside /languges, /language/(langauge)&nbsp;<br>
+5. Reorganized help screen, and place the help screen with in th context of the admin inerface.<br>
+6. Rewrote language select drop down.<br>
+7. Rewrote the search function so it searches filename or defines depending on which screen
+you are on.<br>
+8. Added insert define so you could add defines to a file. (still in progress)<br>
+<!-- End help index.html-->

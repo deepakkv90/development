@@ -1,0 +1,111 @@
+body,td,th {
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+}
+.navTable {
+  font-size: 11px;
+  color: #000000;
+  background-color: #F4F4F4;
+  margin-top: 3px;
+  border-top: 2px solid #999;
+  border-bottom:1px solid #999;
+}
+.navTable input {width: 55px;}
+.bottomBanners {
+  margin-top: 3px;
+  padding-top: 6px;
+}
+.copyright {
+  font-size: 10px;
+  color: #666666;
+  text-align: center;
+  padding-top: 10px;
+}
+body {
+  background-color: #FFFFFF;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+form {
+    margin: 0px;
+}
+input {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+  margin: 2px;
+}
+select {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #000000;
+  margin: 2px;
+}
+br {
+  clear: left;
+}
+#button{
+  margin-top: 5px;
+  width: 90px;
+}
+.forgot span{
+  margin-top:5px;
+}
+.banner {
+  padding-right:5px;
+  vertical-align:top;
+  text-align:right;
+}
+.banner img {
+  margin-top: 3px;
+}
+.HeaderMessage {
+  font-size: 11px;
+  font-weight: bold;
+  color: #000000;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+/**************List Menu ***********/
+#navlist {
+  float: left;
+  background-color: #FFFFFF;
+}
+
+#navlist ul { padding: 0; }
+#navlist ul li { display: inline; }
+#navlist ul {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-family: verdana, geneva, arial, helvetica, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#navlist ul li a {
+  padding: 0.2em 12px;
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  border: 1px solid #BFBFBF;
+  background-color: #E0E0E0;
+}
+
+#navlist ul li a:hover {
+  background-color: #46AEFA;
+  color: #FFFFFF;
+}
+
+#navlist li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #CC3333;
+  text-align: left;
+}
+/**************** end ******************/

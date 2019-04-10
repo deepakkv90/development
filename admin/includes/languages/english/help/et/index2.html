@@ -1,0 +1,52 @@
+<!-- Begin help search index1.html-->
+
+&nbsp;&nbsp;<b>Edit Help Page Index:</b><br>
+<UL>
+<LI><A HREF="#HOW">How Search Works</A></LI>
+<LI><A HREF="#SEARCH_FILE">Searching for a file name</a></LI>
+<LI><A HREF="#SEARCH_DEFINE">Searching for text within a file.</A></LI>
+</UL>
+<H3><A NAME="HOW">How Search Works</H3></a><br>
+&nbsp;&nbsp; You can search one of two ways depending on wich edit screen you are on.
+you can search for file names of test within the Languages define file. Search
+will detect which screen you are on either the a directory/file screen, or a Language Define Edit Screen.
+It will switch the between file and define search logic automaticly for you. <br>
+
+<H3><A NAME="SEARCH_FILE">Where Are the define located</H3></a><br>
+
+&nbsp;&nbsp;1. includes\languages  ~   In this directory all of the base define files reside. a base define file is common to more then one group of output screen.
+<br>&nbsp;&nbsp;2. includes\languages\(Langauge Name) ~ this is where the bulk of the language defines reside
+<br>&nbsp;&nbsp;3. includes\languages\(Langauge Name)\images ~  Unique images the are language dependent. Except for buttons
+<br>&nbsp;&nbsp;4. includes\languages\(Langauge Name)\modules ~ Specific to file that are in the includes/modules directory
+<br>&nbsp;&nbsp;5. includes\languages\(Langauge Name)\modules\order_total ~ Specific to file that are in the includes/modules/order_total directory
+<br>&nbsp;&nbsp;6. includes\languages\(Langauge Name)\modules\payment ~ Specific to file that are in the includes/modules/payment directory
+<br>&nbsp;&nbsp;7. includes\languages\(Langauge Name)\modules\shipping~ Specific to file that are in the includes/modules/shipping directory
+<br>
+
+<br>&nbsp;&nbsp;8. Language file not adressed by language editor.
+<br>&nbsp;&nbsp;includes\modules\payment\paypal\languages\english\ipn.lng.php
+<br>&nbsp;&nbsp;includes\modules\payment\paypal\languages\english.php
+<br>&nbsp;&nbsp;All language file in admin
+<br>
+<H3><A NAME="SEARCH_FILE">Searching for a file name</H3></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;    a. Go to Tools > Define Languages.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    b. Select the directory the define file resides in.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    c. In the search box type in all or part of the file name without the .php<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    d. This will bring up a list of files that contain all or part of
+the text you type in the search box. click on the file name you wish to edit.<br><br>
+ <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/et/images/lng_edit_file.png" border="0" >
+
+<H3><A NAME="SEARCH_DEFINE">Searching for text within a file</H3></a><br>
+While you are in edit mode you can search for Define Display text but not the label.
+&nbsp;&nbsp;&nbsp;&nbsp;    a. Enter the text in search box<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    b. Click the search button<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    b. This will bring up a list of defines<br>
+
+Below is an example of before and after, this is more usfull for some of the larger define files.<br>
+
+ <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/et/images/lng_file_search_t_before.png" border="0" >
+<br>&nbsp;&nbsp; <b>Before  search </b><br>
+
+ <img src="<?php echo DIR_WS_LANGUAGES . $language ;?>/help/et/images/lng_file_search_t_results.png" border="0" >
+<br>&nbsp;&nbsp;<b> After  search </b><br>
+<!-- End help searh index1.html-->

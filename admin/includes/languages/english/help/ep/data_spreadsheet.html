@@ -1,0 +1,116 @@
+<?php
+/*
+  $Id: data_spreadsheet.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td class="main"><p><strong>How to do specific task with the files in Easy Populate Advance:</strong></p>
+      <ol>
+        <li><a href="#1">Adding New Nroducts</a></li>
+        <li><a href="#2">Adding Linked Products</a></li>
+        <li><a href="#3">Deleting Products</a></li>
+        <li><a href="#4">Move Product to New Category</a></li>
+        <li><a href="#5">Reducing Size of Import File</a></li>
+        <li><a href="#6">Your First Import File</a><br>
+          &nbsp;</li>
+      </ol></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="1" id="1"><strong>1. Adding New Products:</strong>(<font color="#FF0000">EPA only</font>)</a>
+      <ul>
+        <li> Because EPA uses the product_ID to link to your products in the database and EPB still uses model numbers many of the additional features for EPA cannot be added to EPB. EPB is used for backward compatibly to older versions of EP.</li>
+        <li> To add products the product_id should be 0, there can be many 0's for product ID's as needed. The code will detect the 0 as a new product and auto increment the products_id. </li>
+        <li> If the products_id number is left blank then the product is not added. You can also insert you own product_ID. they do not have to be sequential. </li>
+        <li> If you need to specify your own unique products_ID, and it does not exist in the data base it will be added as a new product. Make sure you add the correct categories, other wise you will need to use the move product to a new category procedure. </li>
+      </ul>
+      <p> Example: <br>
+        I have a previous inventory software that has already assigned product ID's they are <br>
+        12001<br>
+        15001<br>
+        14<br>
+        2000<br>
+        <br>
+        These can be used by simply putting the in the v_product_id column. ie. A product_id must be a number, this is done so the admin products edit/add for will work. </p></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="2" id="2"><strong>2. Adding Linked Products:</strong></a>
+      <p>A linked product is having one product record set, but having it show in multiple categories. </p>
+      <ul>
+        <li> For a product you want to link to another category
+          Create a download using complete or model/category in the  Select fields to download
+          you can limit the list by using the filter settings.</li>
+        <li> Import into the spread sheet program.
+          <ol>
+            <li>Copy the original product line to a new line.</li>
+            <li>Change only category information where you want the product linked to.
+              Leaving the v_product_id unchanged.</li>
+            <li>Save the file and re upload.</li>
+          </ol>
+        </li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="3" id="3"><strong>3. Deleting Products:</strong>(This has been added back for products only.)</a>
+      <ul>
+        <li>Single product not linked<br>
+          Download any of the files that has a products_id's. You will notice a column called v_action all the way to the left. In this column add delete for each product you which to delete. </li>
+        <li> Deleting linked product: Do a download that has all of the links for the product cut the paste the item you which do remove in front of the product links to remain. In the v_action column enter delete for the link you want to remove.</li>
+      </ul>
+      <p><em>Note: the deleted item must be listed first. The product to remain must be list after the product link you are deleting.</em></p></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="4" id="4"><strong>4. Move a Product to a New Category:</strong></a>
+      <p>In the spread sheet program</p>
+      <ol>
+        <li>Copy the line for the product to a new line.</li>
+        <li>On the original line type in delete in the v_action column.</li>
+        <li>On the new line change the categories.</li>
+      </ol></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="5" id="5"><strong>5. Reducing Size of Import File:</strong></a>
+      <p>Removing columns in the spread sheet. Due to how EP is designed you do not need all of the column from the export file to be present in the import file. <br>
+        Minimum Columns: </p>
+      <ol>
+        <li> products_id, v_status, v_action, EOREOR
+          If you have product information: any or all by products_id can be removed.</li>
+        <li> If you have meta tags or header tags installed make sure you leave the set together  If you have product information: any or all by products_id's can be removed.</li>
+        <li> If you have category information: any or all of the unused category_ columns.</li>
+      </ol>
+      <p> Caution: EP reads a product record set from you data base, then merges data from the import file. If the column you removed from the export file is not in this beginning query then that column will be removed from the data base. <br>
+        Example: Previously if you removed one of the ultra images fields it would delete all data from that column in the products database. <br>
+        Note this bug has been fixed for ultra images, but it is something to keep in mind when constructing new export files.<br>
+      </p></td>
+  </tr>
+  <tr>
+    <td class="main"><a name="6" id="6"><strong>6. Your First Import File:</strong></a>
+      <ul>
+        <li>When you first start to load a store with products it is usually easier to set up you category structure in the admin before you begin.</li>
+        <li>Back up your data base!!!!.</li>
+        <li> Export a complete download so you have all of the headers in the export file.</li>
+        <li> Start your spread sheet program and click on the open file.</li>
+        <li> Navigate to the directory on your local computer where the export file resides. Make sure you change the file type, in the open file dialog to &quot;text CVS,txt&quot;. If you do not all of the information in the text file will be read into one cell of the spreadsheet program.</li>
+        <li> Single (')  and double quotes (&quot;) , MYSQL has problem when you try to insert reserved characters. I can cause error when trying to import then into your database. There are two ways to handle these
+          <ol>
+            <li> Escape the character Example: There\'s Something About Mary</li>
+            <li>Use decimal equivalent of the character Example: There&amp;amp;#39s Something About Mary</li>
+          </ol>
+        <li> EPA and EPB can read both of these and correctly inserts the MYSQL compatible character so single and double quotes are displayed correctly in the catalog. Even if you choose not to use either of these methods EPA and EPB will read the single and double quotes and convert then as needed.</li>
+        <li> Product descriptions: You can draft these with an external HTML editing program or word processor, but you must be careful which one you use. Most MS products used proprietary formats that may not be compatible with most web browsers in use today.</li>
+        <li> When you save the spread sheet file the first time use the save as function instead of the save function. Change the name to something different, in the file type make sure it is &quot;text CVS,txt&quot;. This will preserve the original file in case you already had product in it. This is done so that you can recover form possible errors.</li>
+        <li> For new products use the product use the product_id of 0 if you wish the cart to set you product id's or entry and number op to 15 digits you want.</li>
+        <li> Do one final save making sure the file type is &quot;text CVS,txt&quot;., then go to your cart in import the file.</li>
+      </ul></td>
+  </tr>
+</table>

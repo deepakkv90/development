@@ -1,0 +1,71 @@
+<?php
+/*
+  $Id: data_export.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td class="main"><strong>EP Advanced Export Screen</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_start.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      &nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Basic Change with EP Advanced:</strong><br>
+      The changes here are in the handling of HTML content in descriptions; image path URL's, and EP import filename requirements. You may now import files with html in the text fields and not have it mangled by EP or Excel.  URL's for images in subdirectories can be handled and correctly written to the database. Beginning with 2.75, EP Advanced will not install files unless it begins with EPA,and EP Basic will not install files that begin with EPA.  This feature is to protect the database from errors related to a new column added to the Easy populate file format. EP Advanced uses the product_id column, this allow for more features to be added. EPA is will also allow you to refine your export file so you can target a specific group of records to edit.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Select Method to Save Export File:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_sel_export.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      To export select where you want the export file placed.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Select Field Set to Export:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_field_group.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      Next select which group of feilds to export.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Select Field for Sort Order:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_sortorder.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      Next select the sort order you want the rows to apear in the export file.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Limit Number of Products to Export:</strong><br>
+      If you deal with large export files and find it diffcult to find products to edit. You can use the Limits to make you export files small and target specific groups of records. Not all export files can be limited by all meathods. Meathods can also be combined.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Select Field for Sort Order:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_sortorder.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      Next select the sort order you want the rows to apear in the export file.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Limit By Category:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_limit_cat.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      If you have TOP showing in the drop down box all categories are looked at. If you have a category showing in the drop down box, the that category and all sub categories will be in the list. The categories drop down is generated from your categories in the database.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Limit By Manufacture:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_limit_man.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      If you have Manufactures showing in the drop down box all manufactures are looked at. You can select any manufacture to target just there products. The drop down list of manufacures is read from your manufacters.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Limit By Product Range:</strong><br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_limit_prodid.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      You can use Product Id's to limit your export file.
+      <ul>
+        <li>If no product_id's are enter all of the product are in the export file</li>
+        <li>If the begin product_id and no end product_id is entered. Products from the first product id to the end are in the export file</li>
+        <li>If no beginning product_id's and only and ending product_ID. From the first id to ending the products are in the export file</li>
+        <li>If the begin product_id and ending product_id is enter then this range of products are in the export file</li>
+      </ul></td>
+  </tr>
+</table>

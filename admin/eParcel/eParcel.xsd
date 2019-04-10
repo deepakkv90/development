@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xsd:element name="PCMS">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="SendPCMSManifest"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="SendPCMSManifest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="header"/>
+				<xsd:element ref="body"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="header">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="TransactionDateTime"/>
+				<xsd:element ref="TransactionId"/>
+				<xsd:element ref="ParentId" minOccurs="0"/>
+				<xsd:element ref="TransactionSequence"/>
+				<xsd:element ref="ApplicationId"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="TransactionDateTime" type="xsd:dateTime"/>
+	<xsd:element name="TransactionId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TransactionSequence">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ApplicationId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="10"/>
+				<xsd:minLength value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ParentId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="body">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="PCMSManifest" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="PCMSManifest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="MerchantLocationId"/>
+				<xsd:element ref="ManifestNumber"/>
+				<xsd:element ref="DateSubmitted"/>
+				<xsd:element ref="DateLodged"/>
+				<xsd:element ref="PCMSConsignment" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="MerchantLocationId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="3"/>
+				<xsd:minLength value="3"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ManifestNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="1"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DateSubmitted" type="xsd:dateTime"/>
+	<xsd:element name="DateLodged" type="xsd:dateTime"/>
+	<xsd:element name="PCMSConsignment">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ConsignmentNumber"/>
+				<xsd:element ref="ChargeCode"/>
+				<xsd:element ref="InternalChargebackAccount" minOccurs="0"/>
+				<xsd:element ref="ReferenceNo1" minOccurs="0"/>
+				<xsd:element ref="ReferenceNo2" minOccurs="0"/>
+				<xsd:element ref="DeliveryName"/>
+				<xsd:element ref="DeliveryCompanyName" minOccurs="0"/>
+				<xsd:element ref="EmailNotification" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddressLine1"/>
+				<xsd:element ref="DeliveryAddressLine2" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddressLine3" minOccurs="0"/>
+				<xsd:element ref="DeliveryAddressLine4" minOccurs="0"/>
+				<xsd:element ref="DeliveryPhoneNumber" minOccurs="0"/>
+				<xsd:element ref="DeliveryEmailAddress" minOccurs="0"/>
+				<xsd:element ref="DeliverySuburb"/>
+				<xsd:element ref="DeliveryStateCode"/>
+				<xsd:element ref="DeliveryPostcode"/>
+				<xsd:element ref="DeliveryCountryCode"/>
+				<xsd:element ref="DeliveryInstructions" minOccurs="0"/>
+				<xsd:element ref="IsInternationalDelivery"/>
+				<xsd:element ref="ReturnName" minOccurs="0"/>
+				<xsd:element ref="ReturnAddressLine1"/>
+				<xsd:element ref="ReturnAddressLine2" minOccurs="0"/>
+				<xsd:element ref="ReturnAddressLine3" minOccurs="0"/>
+				<xsd:element ref="ReturnAddressLine4" minOccurs="0"/>
+				<xsd:element ref="ReturnSuburb"/>
+				<xsd:element ref="ReturnStateCode"/>
+				<xsd:element ref="ReturnPostcode"/>
+				<xsd:element ref="ReturnCountryCode" minOccurs="0"/>
+				<xsd:element ref="ReturnDeliveryInstructions" minOccurs="0"/>
+				<xsd:element ref="CreatedDateTime"/>
+				<xsd:element ref="PostChargeToAccount" minOccurs="0"/>
+				<xsd:element ref="IsSignatureRequired" minOccurs="0"/>
+				<xsd:element ref="CTCAmount" minOccurs="0"/>
+				<xsd:element ref="DeliverPartConsignment"/>
+				<xsd:element ref="ContainsDangerousGoods" minOccurs="0"/>
+				<xsd:element ref="ProfileId" minOccurs="0"/>
+				<xsd:element ref="PCMSDomesticArticle" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ConsignmentNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="20"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ChargeCode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="InternalChargebackAccount">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="20"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReferenceNo1">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReferenceNo2">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryName">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryCompanyName">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="EmailNotification">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Y"/>
+	        	<xsd:enumeration value="N"/>
+	        	<xsd:enumeration value="y"/>
+	        	<xsd:enumeration value="n"/>
+	  	</xsd:restriction>
+	    </xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddressLine1">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddressLine2">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="60"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddressLine3">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryAddressLine4">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryPhoneNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="30"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryEmailAddress">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliverySuburb">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryStateCode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryPostcode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="4"/>
+				<xsd:maxLength value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="DeliveryCountryCode" type="pcmsCountryCodeType"/>
+	<xsd:element name="DeliveryInstructions" type="xsd:string"/>
+	<xsd:element name="IsInternationalDelivery" type="xsd:boolean"/>
+	<xsd:element name="ReturnName">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnAddressLine1">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnAddressLine2">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="60"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnAddressLine3">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnAddressLine4">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="0"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnSuburb">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnStateCode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="10"/>
+				<xsd:minLength value="1"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnPostcode">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="4"/>
+				<xsd:maxLength value="10"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ReturnCountryCode" type="pcmsCountryCodeType"/>
+	<xsd:element name="ReturnDeliveryInstructions" type="xsd:string"/>
+	<xsd:element name="CreatedDateTime" type="xsd:dateTime"/>
+	<xsd:element name="PostChargeToAccount">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="1"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="IsSignatureRequired">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="1"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="CTCAmount" type="xsd:decimal"/>
+	<xsd:element name="DeliverPartConsignment">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="1"/>
+				<xsd:minLength value="1"/>
+				<xsd:enumeration value="Y"/>
+				<xsd:enumeration value="N"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContainsDangerousGoods" type="xsd:boolean"/>
+	<xsd:element name="ProfileId">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:maxLength value="20"/>
+				<xsd:minLength value="0"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="PCMSDomesticArticle">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="ArticleNumber"/>
+				<xsd:element ref="BarcodeArticleNumber" minOccurs="0"/>
+				<xsd:element ref="Length" minOccurs="0"/>
+				<xsd:element ref="Width" minOccurs="0"/>
+				<xsd:element ref="Height" minOccurs="0"/>
+				<xsd:element ref="ActualWeight"/>
+				<xsd:element ref="CubicWeight" minOccurs="0"/>
+				<xsd:element ref="ArticleDescription" minOccurs="0"/>
+				<xsd:element ref="IsTransitCoverRequired"/>
+				<xsd:element ref="TransitCoverAmount" minOccurs="0"/>
+				<xsd:element ref="ContentsItem" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ArticleNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="BarcodeArticleNumber">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Length" type="xsd:long"/>
+	<xsd:element name="Width" type="xsd:long"/>
+	<xsd:element name="Height" type="xsd:long"/>
+	<xsd:element name="ActualWeight">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:fractionDigits value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="CubicWeight">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:fractionDigits value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ArticleDescription">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="IsTransitCoverRequired">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="1"/>
+				<xsd:enumeration value="N"/>
+				<xsd:enumeration value="Y"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="TransitCoverAmount">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="40"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="ContentsItem">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="GoodsDescription" minOccurs="0"/>
+				<xsd:element ref="Weight" minOccurs="0"/>
+				<xsd:element ref="Quantity" minOccurs="0"/>
+				<xsd:element ref="UnitValue" minOccurs="0"/>
+				<xsd:element ref="Value" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="GoodsDescription">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:minLength value="1"/>
+				<xsd:maxLength value="50"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Weight">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:decimal">
+				<xsd:fractionDigits value="2"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="Quantity" type="xsd:long"/>
+	<xsd:element name="UnitValue" type="xsd:decimal"/>
+	<xsd:element name="Value" type="xsd:long"/>
+	<xsd:simpleType name="pcmsCountryCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AF"/>
+			<xsd:enumeration value="Al"/>
+			<xsd:enumeration value="DZ"/>
+			<xsd:enumeration value="AO"/>
+			<xsd:enumeration value="AI"/>
+			<xsd:enumeration value="AG"/>
+			<xsd:enumeration value="AR"/>
+			<xsd:enumeration value="AM"/>
+			<xsd:enumeration value="AW"/>
+			<xsd:enumeration value="SH"/>
+			<xsd:enumeration value="AU"/>
+			<xsd:enumeration value="AT"/>
+			<xsd:enumeration value="AZ"/>
+			<xsd:enumeration value="BS"/>
+			<xsd:enumeration value="BH"/>
+			<xsd:enumeration value="BD"/>
+			<xsd:enumeration value="BB"/>
+			<xsd:enumeration value="BY"/>
+			<xsd:enumeration value="BE"/>
+			<xsd:enumeration value="BZ"/>
+			<xsd:enumeration value="BJ"/>
+			<xsd:enumeration value="BM"/>
+			<xsd:enumeration value="BT"/>
+			<xsd:enumeration value="BO"/>
+			<xsd:enumeration value="BA"/>
+			<xsd:enumeration value="BW"/>
+			<xsd:enumeration value="BR"/>
+			<xsd:enumeration value="IO"/>
+			<xsd:enumeration value="BN"/>
+			<xsd:enumeration value="BG"/>
+			<xsd:enumeration value="BF"/>
+			<xsd:enumeration value="BI"/>
+			<xsd:enumeration value="KH"/>
+			<xsd:enumeration value="CM"/>
+			<xsd:enumeration value="CA"/>
+			<xsd:enumeration value="CV"/>
+			<xsd:enumeration value="KY"/>
+			<xsd:enumeration value="CF"/>
+			<xsd:enumeration value="TD"/>
+			<xsd:enumeration value="CL"/>
+			<xsd:enumeration value="CN"/>
+			<xsd:enumeration value="CO"/>
+			<xsd:enumeration value="KM"/>
+			<xsd:enumeration value="CG"/>
+			<xsd:enumeration value="CD"/>
+			<xsd:enumeration value="CK"/>
+			<xsd:enumeration value="CR"/>
+			<xsd:enumeration value="CI"/>
+			<xsd:enumeration value="HR"/>
+			<xsd:enumeration value="CU"/>
+			<xsd:enumeration value="CY"/>
+			<xsd:enumeration value="CZ"/>
+			<xsd:enumeration value="DK"/>
+			<xsd:enumeration value="DJ"/>
+			<xsd:enumeration value="DM"/>
+			<xsd:enumeration value="DO"/>
+			<xsd:enumeration value="EC"/>
+			<xsd:enumeration value="EG"/>
+			<xsd:enumeration value="SV"/>
+			<xsd:enumeration value="GQ"/>
+			<xsd:enumeration value="ER"/>
+			<xsd:enumeration value="EE"/>
+			<xsd:enumeration value="ET"/>
+			<xsd:enumeration value="FK"/>
+			<xsd:enumeration value="FJ"/>
+			<xsd:enumeration value="AF"/>
+			<xsd:enumeration value="FI"/>
+			<xsd:enumeration value="FR"/>
+			<xsd:enumeration value="GF"/>
+			<xsd:enumeration value="PF"/>
+			<xsd:enumeration value="GA"/>
+			<xsd:enumeration value="GM"/>
+			<xsd:enumeration value="GE"/>
+			<xsd:enumeration value="DE"/>
+			<xsd:enumeration value="GH"/>
+			<xsd:enumeration value="GI"/>
+			<xsd:enumeration value="GR"/>
+			<xsd:enumeration value="GL"/>
+			<xsd:enumeration value="GD"/>
+			<xsd:enumeration value="GP"/>
+			<xsd:enumeration value="GU"/>
+			<xsd:enumeration value="GT"/>
+			<xsd:enumeration value="GN"/>
+			<xsd:enumeration value="GW"/>
+			<xsd:enumeration value="GY"/>
+			<xsd:enumeration value="HN"/>
+			<xsd:enumeration value="HK"/>
+			<xsd:enumeration value="HU"/>
+			<xsd:enumeration value="IS"/>
+			<xsd:enumeration value="IN"/>
+			<xsd:enumeration value="ID"/>
+			<xsd:enumeration value="IR"/>
+			<xsd:enumeration value="IQ"/>
+			<xsd:enumeration value="IE"/>
+			<xsd:enumeration value="IL"/>
+			<xsd:enumeration value="IT"/>
+			<xsd:enumeration value="IM"/>
+			<xsd:enumeration value="JP"/>
+			<xsd:enumeration value="JO"/>
+			<xsd:enumeration value="KZ"/>
+			<xsd:enumeration value="KE"/>
+			<xsd:enumeration value="KI"/>
+			<xsd:enumeration value="KP"/>
+			<xsd:enumeration value="KR"/>
+			<xsd:enumeration value="KW"/>
+			<xsd:enumeration value="KG"/>
+			<xsd:enumeration value="LA"/>
+			<xsd:enumeration value="LV"/>
+			<xsd:enumeration value="LB"/>
+			<xsd:enumeration value="LS"/>
+			<xsd:enumeration value="LR"/>
+			<xsd:enumeration value="LY"/>
+			<xsd:enumeration value="LI"/>
+			<xsd:enumeration value="LT"/>
+			<xsd:enumeration value="LU"/>
+			<xsd:enumeration value="MO"/>
+			<xsd:enumeration value="MK"/>
+			<xsd:enumeration value="MG"/>
+			<xsd:enumeration value="MW"/>
+			<xsd:enumeration value="MY"/>
+			<xsd:enumeration value="MV"/>
+			<xsd:enumeration value="ML"/>
+			<xsd:enumeration value="MT"/>
+			<xsd:enumeration value="MP"/>
+			<xsd:enumeration value="MH"/>
+			<xsd:enumeration value="MQ"/>
+			<xsd:enumeration value="MR"/>
+			<xsd:enumeration value="MU"/>
+			<xsd:enumeration value="MX"/>
+			<xsd:enumeration value="FM"/>
+			<xsd:enumeration value="MD"/>
+			<xsd:enumeration value="MN"/>
+			<xsd:enumeration value="MS"/>
+			<xsd:enumeration value="MA"/>
+			<xsd:enumeration value="MZ"/>
+			<xsd:enumeration value="MM"/>
+			<xsd:enumeration value="NA"/>
+			<xsd:enumeration value="NR"/>
+			<xsd:enumeration value="NP"/>
+			<xsd:enumeration value="NL"/>
+			<xsd:enumeration value="AN"/>
+			<xsd:enumeration value="NC"/>
+			<xsd:enumeration value="NZ"/>
+			<xsd:enumeration value="NI"/>
+			<xsd:enumeration value="NE"/>
+			<xsd:enumeration value="NG"/>
+			<xsd:enumeration value="NU"/>
+			<xsd:enumeration value="NO"/>
+			<xsd:enumeration value="OM"/>
+			<xsd:enumeration value="PK"/>
+			<xsd:enumeration value="PW"/>
+			<xsd:enumeration value="PA"/>
+			<xsd:enumeration value="PG"/>
+			<xsd:enumeration value="PY"/>
+			<xsd:enumeration value="PE"/>
+			<xsd:enumeration value="PH"/>
+			<xsd:enumeration value="PN"/>
+			<xsd:enumeration value="PL"/>
+			<xsd:enumeration value="PT"/>
+			<xsd:enumeration value="PR"/>
+			<xsd:enumeration value="QA"/>
+			<xsd:enumeration value="RE"/>
+			<xsd:enumeration value="RO"/>
+			<xsd:enumeration value="RU"/>
+			<xsd:enumeration value="RW"/>
+			<xsd:enumeration value="KN"/>
+			<xsd:enumeration value="AS"/>
+			<xsd:enumeration value="WS"/>
+			<xsd:enumeration value="ST"/>
+			<xsd:enumeration value="SA"/>
+			<xsd:enumeration value="SN"/>
+			<xsd:enumeration value="CS"/>
+			<xsd:enumeration value="SC"/>
+			<xsd:enumeration value="SL"/>
+			<xsd:enumeration value="SG"/>
+			<xsd:enumeration value="SK"/>
+			<xsd:enumeration value="SI"/>
+			<xsd:enumeration value="SB"/>
+			<xsd:enumeration value="SO"/>
+			<xsd:enumeration value="ZA"/>
+			<xsd:enumeration value="ES"/>
+			<xsd:enumeration value="LK"/>
+			<xsd:enumeration value="LC"/>
+			<xsd:enumeration value="PM"/>
+			<xsd:enumeration value="VC"/>
+			<xsd:enumeration value="SD"/>
+			<xsd:enumeration value="SR"/>
+			<xsd:enumeration value="SZ"/>
+			<xsd:enumeration value="SE"/>
+			<xsd:enumeration value="CH"/>
+			<xsd:enumeration value="SY"/>
+			<xsd:enumeration value="TW"/>
+			<xsd:enumeration value="TJ"/>
+			<xsd:enumeration value="TZ"/>
+			<xsd:enumeration value="TH"/>
+			<xsd:enumeration value="TG"/>
+			<xsd:enumeration value="TK"/>
+			<xsd:enumeration value="TO"/>
+			<xsd:enumeration value="TT"/>
+			<xsd:enumeration value="TN"/>
+			<xsd:enumeration value="TR"/>
+			<xsd:enumeration value="TM"/>
+			<xsd:enumeration value="TC"/>
+			<xsd:enumeration value="TV"/>
+			<xsd:enumeration value="UG"/>
+			<xsd:enumeration value="UA"/>
+			<xsd:enumeration value="AE"/>
+			<xsd:enumeration value="GB"/>
+			<xsd:enumeration value="US"/>
+			<xsd:enumeration value="UY"/>
+			<xsd:enumeration value="UZ"/>
+			<xsd:enumeration value="VU"/>
+			<xsd:enumeration value="VA"/>
+			<xsd:enumeration value="VE"/>
+			<xsd:enumeration value="VN"/>
+			<xsd:enumeration value="VG"/>
+			<xsd:enumeration value="VI"/>
+			<xsd:enumeration value="WF"/>
+			<xsd:enumeration value="YE"/>
+			<xsd:enumeration value="ZM"/>
+			<xsd:enumeration value="ZW"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

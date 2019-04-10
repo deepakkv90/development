@@ -1,0 +1,242 @@
+<script type="text/javascript">
+var M1SEO = {};
+M1SEO.statusurl = '<?php echo m1_uAdminPage::convUrl('m1_seourls.ajax.php', 'action=update_keywords_status'); ?>';
+M1SEO.statusUpdateInterval = 1500;
+M1SEO.updateIsStarted = false;
+<?php if (m1_seo_update_status::isStarted()) : ?>
+	M1SEO.updateIsStarted = true;
+<?php endif; ?>
+function switchButtons(row, button) {
+	$(row).find('a.abutton').show().end().find('span.abutton').hide();
+	
+	$(row).find('a' + button).hide().end().find('span' + button).show();
+}
+
+$(function () {
+<?php if ($tpl->force_cookie_use) : ?>
+switchButtons('#forcecookie', '.fcenable');
+//$('#forcecookie .control a.fcenable').add('#forcecookie .control span.fcdisable').hide();
+<?php else : ?>
+switchButtons('#forcecookie', '.fcdisable');
+//$('#forcecookie .control a.fcdisable').add('#forcecookie .control span.fcenable').hide();		
+<?php endif; ?>
+switchButtons('#convertcase', '.cs' + '<?php echo $tpl->convert_case ?>');
+<?php if ($tpl->metainfo_replacing): ?>
+switchButtons('#addmetainfo', '.amenable');
+<?php else : ?>
+switchButtons('#addmetainfo', '.amdisable');
+<?php endif; ?>
+
+$('#template-' + '<?php echo $tpl->url_template ?>').addClass('tplselected');
+});
+</script>
+
+<div id="update_status">
+	<div class="update_now">
+		<a href="<?php echo m1_uAdminPage::convUrl('m1_seourls.ajax.php', 'action=update_keywords_start'); ?>" target="_blank" class="update_button">Click here to Update Keywords Now!</a>
+	</div>
+	
+	<div class="update_status">
+    	<span class="update_status_text">Updating keywords...</span>
+    	<img src="m1/seourls/tpl/images/updating.gif" align="absmiddle" class="progress">
+	</div>
+	
+	<div class="update_date">
+		Latest Keywords Update:
+		<span class="ud_date_time">
+		<?php if ($tpl->keywords_last_update == null) : ?>
+			Never
+		<?php else: ?>
+			<?php echo gmdate('M d, Y h:i:s', $tpl->keywords_last_update) ?> UTC
+		<?php endif;?>
+		</span>
+	</div>
+	
+	<div class="update_result">
+		
+	</div>
+</div>
+
+<div class="configrow warningrow">
+    <div class="caption">
+		&nbsp;
+	</div>
+    <div class="control">
+    	<div class="description">
+			<strong>Please read before changing!</strong><br><br>
+            <strong>Any change on this page will affect your current SEO results</strong>.<br>
+            Usually you change this setting only once before publishing your store and don't change again.<br>
+            Please think twice before selecting your URL scheme. We recommend template #2.<br>
+            <br>
+            We strongly recommend to discuss this with your SEO specialist/team.
+		</div>
+    </div>
+</div>
+
+<?php if ($tpl->isOldMysqlVersion) : ?>
+<div class="configrow warningrow">
+    <div class="caption">
+		Server Incompatibility:
+	</div>
+    <div class="control">
+    	<div class="description">
+ 			
+			Your MySQL version (<?php echo $tpl->mysql_version?>) is too old. Some features was disabled:<br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;Automatic Duplicates Resolving<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;Multi-language support(partially)<br /><br />
+			<strong>To enable this features ask your hosting provider upgrade to MySQL 4 version or newer</strong>
+		</div>
+    </div>
+</div>
+<?php endif; ?>
+
+<div class="configrow" id="convertcase">
+    <div class="caption">Convert Keywords Case: </div>
+    <div class="control">
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=convertcase&case=none') ?>" class="m1p_orange abutton csnone">None</a>
+    	<span class="abutton csnone">None</span>
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=convertcase&case=lowercase') ?>" class="m1p_orange abutton cslowercase">lowercase</a>
+    	<span class="abutton cslowercase">lowercase</span>
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=convertcase&case=uppercase') ?>" class="m1p_orange abutton csuppercase">UPPERCASE</a>
+    	<span class="abutton csuppercase">UPPERCASE</span>
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=convertcase&case=ucfirst') ?>" class="m1p_orange abutton csucfirst">Ucfirst</a>
+    	<span class="abutton csucfirst">Ucfirst</span>
+    	<div class="description">
+    		You can convert keywords that will be used as URL-address of each product to UPPERCASE, lowercase or Uppercase First Letters Of Words (Ucfirst). 
+			This option should be used mostly for consistency, it doesn't affect your SEO result. Old links will continue working even if you change this option, so you can change it without bad consequences on your SEO results.
+    	</div>
+    </div>
+</div>
+
+<div class="configrow" id="urltemplates">
+    <div class="caption">URL Templates:</div>
+    <div class="control">
+    	<div class="warning">Use this option carefully - changing URL Template can affect your website SEO rankings</div>
+    	<div class="urltplselect" id="template-1">
+    		<span class="updateurl"><?php echo htmlentities($this->url('m1_seourls.ajax.php', 'action=set_settings&section=urltemplate&template=1')) ?></span>
+    		<span class="tname">Products as Pages and Categories as Folders</span>
+    		<ul>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">hardware/modems/zyxel-omni-56k</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">hardware/modems</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">categ4page/some-page</span></li>
+    		</ul>
+       	</div>
+    	<div class="urltplselect" id="template-2">
+    		<span class="updateurl"><?php echo htmlentities($this->url('m1_seourls.ajax.php', 'action=set_settings&section=urltemplate&template=2')) ?></span>
+    		<span class="tname">All Products and Categories in Store Root</span>
+    		<ul>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">zyxel-omni-56k</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">modems</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">some-page</span></li>
+    		</ul>
+       	</div>
+    	<div class="urltplselect" id="template-3">
+    		<span class="updateurl"><?php echo htmlentities($this->url('m1_seourls.ajax.php', 'action=set_settings&section=urltemplate&template=3')) ?></span>
+    		<span class="tname">Products as Pages with .html and Categories as Folders</span>
+    		<ul>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">hardware/modems/zyxel-omni-56k.html</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">hardware/modems</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">categ4page/some-page.html</span></li>
+    		</ul>
+       	</div>
+    	<div class="urltplselect" id="template-4">
+    		<span class="updateurl"><?php echo htmlentities($this->url('m1_seourls.ajax.php', 'action=set_settings&section=urltemplate&template=4')) ?></span>
+    		<span class="tname">All Products and Categories in Store Root as Pages with .html</span>
+    		<ul>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">zyxel-omni-56k.html</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">modems.html</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">some-page.html</span></li>
+    		</ul>
+       	</div>
+  		<div class="urltplselect" id="template-5">
+    		<span class="updateurl"><?php echo htmlentities($this->url('m1_seourls.ajax.php', 'action=set_settings&section=urltemplate&template=5')) ?></span>
+    		<span class="tname">Products as Pages and Manufacturers as Folders</span>
+    		<ul>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">zyxel/zyxel-omni-56k</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">hardware/modems</span></li>
+    			<li><?php echo $tpl->catalog_url ?><span class="seopath">categ4page/some-page</span></li>
+    		</ul>
+       	</div>
+    	<div class="description">
+    		Select URL Template that best fit your store layout. <br />
+    	</div>
+    	
+    </div>
+</div>
+
+<div class="configrow" id="cacherow">
+    <div class="caption">Make Power SEO Faster: </div>
+    <div class="control">
+    	<div class="description" style="margin-top: 0px;">
+			<?php if (!$tpl->is_cache_writable) : ?>
+			1. Create directory 
+			<pre><?php echo M1_Loader::dir_catalog() . 'cache/m1_seourls/' ?></pre>
+			2. Make created directory writeable<br />
+			<?php else : ?>
+			<span class="enabled">Cache is active now</span>&nbsp;&nbsp;&nbsp;
+			<a href="<?php 
+				echo $this->url(
+					'm1_seourls.ajax.php', 
+					'action=clearcache') ?>"
+					 class="m1p_orange clearcache">Clear Cache Now</a>
+			<span class="clearstatus"></span>
+			<div style="margin-top: 10px;">
+				To disable Power SEO cache just remove the cache directory
+				<pre>Cache Path: <?php echo M1_Loader::dir_catalog() . 'cache/m1_seourls/' ?></pre>
+			</div>
+			<?php endif; ?>
+		</div>
+    </div>
+</div>
+
+<div class="configrow">
+    <div class="caption">Custom "404 Not Found" Page: </div>
+    <div class="control">
+    	<div class="description" style="margin-top: 0px;">
+    	Please edit file <strong>m1_seourls.error.php</strong> to change default 404 page<br />
+    	You may find few ideas how to make your 404 page useful <a href="http://www.google.com/search?q=404+page+best+practices&hl=en&sourceid=gd&rls=GGLD,GGLD:2008-15,GGLD:en&aq=t" class="m1p_orange" target="_blank"> here</a> 
+		</div>
+    </div>
+</div>
+
+<div class="configrow">
+    <div class="caption">Redirect old URL's to new ones: </div>
+    <div class="control">
+    	<div class="description" style="margin-top: 0px;">
+    	<b>Important</b>: If you were using some SEO link rewrite module prior to installation of Power SEO and 
+    	have some specific URLs that are linked with some external services (like AdWords or similar) most 
+    	likely you'd like to keep those links. In order to do so please carefully read software documentation. 
+		</div>
+    </div>
+</div>
+
+<div class="configrow">
+    <div class="caption">Automated Keywords Maintenance: </div>
+    <div class="control">
+    	<div class="description" style="margin-top: 0px;">
+    		Every time when you add new product - it is necessary to create Keywords for this product, to have proper SEO-friendly URL's for this particular product.
+    		You can either manually update keywords or setup Cron job to automate this task to be done every day.<br>
+    		Here is quick example of cron command to do this:<br>
+    		<pre>curl "<?php echo $tpl->catalog_url ?>m1_seourls.cron.php"</pre>
+    		Where you will need to change path to cron executable in your system and your store address.<br>
+    		Please contact technical person if you need help with this.
+		</div>
+    </div>
+</div>
+
+
+
+<!-- div class="configrow" id="addmetainfo">
+    <div class="caption">Add Meta Information</div>
+    <div class="control">
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=metainfo&param=enable') ?>" class="m1p_orange abutton amenable">Enable</a>
+    	<span class="abutton amenable">Enable</span>
+    	<a href="<?php echo $this->url('m1_seourls.ajax.php', 'action=set_settings&section=metainfo&param=disable') ?>" class="m1p_orange abutton amdisable">Disable</a>
+    	<span class="abutton amdisable">Disable</span>
+    	<div class="description">
+    		Insert description here...    	
+    	</div>
+    </div>
+</div -->
+
+&nbsp;

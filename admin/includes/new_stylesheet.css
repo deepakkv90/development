@@ -1,0 +1,301 @@
+/*
+  $Id: stylesheet.css,v 1.26 2003/06/30 20:03:50 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2002 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+/* links */
+a:link { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal; text-decoration: none; }
+a:visited { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal; text-decoration: none; }
+a:active { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal; text-decoration: none; }
+a:hover { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal; text-decoration: underline; }
+
+a.headerLink:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.headerLink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.headerLink:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.headerLink:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.headerLink:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a.menuBoxHeadingLink:link {
+font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+background: url(../images/icons/arrowsmenu.gif) no-repeat 6px center;
+/*display: block;*/
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding-bottom:0px;
+padding-left:20px;
+padding-right:0px;
+padding-top:0px;
+ font-size: 12px; color: #000000; font-weight: bold; text-decoration: none;
+ }
+ 
+a.menuBoxHeadingLink:visited {font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif; 
+background: url(../images/icons/arrowsmenu.gif) no-repeat 6px center;
+/*display: block;*/
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding: 0px 0px 0px 20px;
+font-size: 12px; color: #000000; font-weight: bold; text-decoration: none;
+}
+
+a.menuBoxHeadingLink:active {
+font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif; 
+background: url(../images/icons/arrowsmenu.gif) no-repeat 6px center;
+/*display: block;*/
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding: 0px 0px 0px 20px;
+font-size: 12px; color:#000000; font-weight: bold; text-decoration: none;
+}
+
+a.menuBoxHeadingLink:hover {
+background: url(../images/icons/arrowsmenu.gif) no-repeat 6px center;
+/*display: block;*/
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:0px;
+padding: 0px 0px 0px 20px;
+	font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;	
+	background-color:#cc3300;
+}
+a.menuBoxContentLink:link {
+	font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#BF1F1F;
+	margin-left:20px;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.menuBoxContentLink:visited {
+	font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#BF1F1F;
+	margin-left:20px;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.menuBoxContentLink:active {
+	font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#BF1F1F;
+	margin-left:20px;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.menuBoxContentLink:hover {
+	font-family: "Trebuchet MS", serif, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#BF1F1F;
+	margin-left:20px;
+	font-weight: normal;
+	text-decoration: underline;
+
+}
+
+a.splitPageLink:link { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #0000FF; font-weight: normal; text-decoration: none; }
+a.splitPageLink:visited { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #0000FF; font-weight: normal; text-decoration: none; }
+a.splitPageLink:active { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #0000FF; font-weight: normal; text-decoration: none; }
+a.splitPageLink:hover { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #0000FF; font-weight: normal; text-decoration: underline; background-color: #FFFF33; }
+
+/* menu box */
+.menuBoxHeading { 
+font-family: Arial, Helvetica, sans-serif; 
+font-size: 12px; 
+color: #616060; 
+}
+.menuBoxContent { font-family: Arial, Helvetica, sans-serif; 
+font-size: 11px;
+color: #616060; 
+ }
+
+.menuAdmin{ 
+background: url(../images/menu_main.gif) repeat-y;
+}
+
+/* page */
+body { /*background-color: #ffffff;*/
+color: #000000; /*margin: 0px;*/ }
+.headerBar {
+	background-color: #ffffff;
+	border: #A52A2A;
+}
+.headerBarContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #8B4513;
+	font-weight: bold;
+	padding: 1px;
+}
+.columnLeft {
+	border-right-color:#D2BC8B;
+	border-right-width: 1px;
+	border-right-style: dotted;
+}
+
+.pageHeading {
+ font-family: Arial, Helvetica, sans-serif; 
+ font-size: 18px;
+  color: #000000; 
+  font-weight: bold; 
+  }
+
+/* data table */
+.dataTableHeadingRow {
+	background-color: #C9C9C9;
+	/*background-color: #804040;*/	
+}
+.dataTableHeadingContent { font-family: Arial, Helvetica, sans-serif; font-size: 11px; 
+/*color: #ffffff; */
+color: #000000; 
+
+font-weight: bold; }
+.dataTableRow { 
+background-color: #F0F1F1;
+/*background-color: #FFE2C6;*/
+}
+.dataTableRowSelected { background-color: #FFDB6F; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font color: #FFFFFF; font-weight: bold; }
+.dataTableRowOver { background-color: #ffffff; cursor: pointer; cursor: hand; }
+.dataTableContent { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; }
+
+/* info box */
+.infoBoxHeading { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ffffff; background-color: #B3BAC5; }
+.infoBoxContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #EEEEEE;
+}
+
+/* message box */
+
+.messageBox { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+.messageStackError, .messageStackWarning { font-family: Arial, Helvetica, sans-serif; font-size: 11px; background-color: #ffb3b5; }
+.messageStackSuccess { font-family: Arial, Helvetica, sans-serif; font-size: 11px; background-color: #99ff00; }
+
+/* forms */
+CHECKBOX, INPUT, RADIO, SELECT, TEXTAREA, FILE { font-family: Arial, Helvetica, sans-serif; font-size: 11px; }
+FORM { display: inline; }
+
+/* account */
+.formArea { background-color: #f1f9fe; border-color: #7b9ebd; border-style: solid; border-width: 1px; }
+.formAreaTitle { font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; }
+
+/* attributes */
+.attributes-odd { background-color: #f4f7fd; }
+.attributes-even { background-color: #ffffff; }
+
+/* miscellaneous */
+.specialPrice { color: #ff0000; }
+.oldPrice { text-decoration: line-through; }
+.fieldRequired { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ff0000; }
+.smallText { font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.main { font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.errorText { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #ff0000; }
+/* Contribution Prof_Invoice&PackingSlip */
+.pageHeading-invoice { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; font-weight: normal; padding: 3px; }
+.pageHeading-invoice2 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #666666; font-weight: normal; border: 1px ridge #CCCCCC; padding: 3px; }
+.dataTableHeadingContent-invoice { font-family: Arial, Helvetica, sans-serif;	font-size: 11px; color: #ffffff; font-weight: bold; border: 1px ridge #000000;}
+.main-payment { font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: #FFFF99; border: 1px ridge #000000; }
+
+TD.pageFoot-invoice{
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; color:#CC0000; font-weight: bold; padding: 3px;
+}
+.VisitorTableBox {border-top: solid 1px #000000; border-left: solid 1px #000000; }
+.VisitorTableHeadingContent {
+	color: #000000;
+bold; 	border-right: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.VisitorTableContent { font: normal 8pt Arial, Helvetica, sans-serif; color: #000000; border-right: solid 1px #000000; border-bottom: solid 1px #000000; }
+/* Supertracker Styles */
+.supertracker_menu {background: #ddd; border: 1px solid #aaa; padding: 11px;}
+.supertracker_title {font-face: Tahoma, Verdana, Arial; font-size: 16px; font-weight: bold; }
+.supertracker_section {margin-top: 11px;}
+.supertracker_sub_title {font-face: Tahoma, Verdana, Arial; font-size: 14px; text-decoration: underline; font-weight: bold; }
+A.supertracker_link { font-face: Tahoma, Verdana, Arial; font-size: 11px; font-decoration: underline; margin: 5px 11px 5px 11px;}
+.supertracker_text { font-face: Tahoma, Verdana, Arial; font-size: 11px;}
+.supertracker_contact {font-face: Tahoma, Verdana, Arial;font-size: 11px; width: 100%px;background: #aaa;	padding: 5px;	margin: 11px 0 11px 0; border: 1px solid #000;}
+/* Supertracker Styles EOF */
+
+.infoBox {
+  border: 1px solid #B2B2B2;
+}
+.infoBoxContents A:link, .infoBoxContents A:active, .infoBoxContents A:visited{
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	color: #888619;
+}
+
+/* Invoice rounded corner start */
+	.container {background:#F0F1F1; color:#000; margin:0 15px;  }
+	.rtop, .rbottom {
+		display:block;
+		background:#F0F1F1;
+	}
+	.rtop *, .rbottom *{
+		display: block;
+		height: 1px;
+		overflow: hidden;
+		background:#F0F1F1;			 
+	}		
+	.r1{ margin: 0 5px; }
+	.r2{ margin: 0 3px; border-left:2px solid #000; border-right:2px solid #000; }
+	.r3{ margin: 0 2px; border-left:2px solid #000; border-right:2px solid #000; }
+	.r4{
+		margin: 0 1px;
+		height: 2px;
+		border-left:2px solid #000; border-right:2px solid #000;	
+	}	
+	.inner_div { padding:10px; border-left:2px solid #000; border-right:2px solid #000; }
+	.smallText { font-size:11px; }
+/* Invoice rounded corner end */	

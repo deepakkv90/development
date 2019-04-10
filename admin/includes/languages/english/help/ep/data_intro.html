@@ -1,0 +1,83 @@
+<?php
+/*
+  $Id: data_intro.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td class="main"><strong>Introduction to Data Export/Import System</strong><br>
+      &nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Introduction:</strong><br>
+      Data feed service is a collection of contributions to allow you to updated your products and categories data remotely, and send that data to data listing services. It uses a number of contributions that have been modified to work better with small, medium, and large stores.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Goals:</strong><br>
+      The typical store owner never needs to edit a code or define file directly.The store owner does not need a lot of support on how to use program.Combines the functions of moving data in and out of store is in one area. Make it flexable enough for small, medium and large store to use program effectivly. Move program files closer to OSC/Cre Loaded standerds for look and feel, and codeing.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Parts of Data Feed Service:</strong><br>
+      Easy Populate Advance enhanced by Tom O'Neill<br>
+      Easy Populate Basic enhanced by Tom O'Neill<br>
+      Google Base data feed : Calvin K<br>
+      Salemaker for Google Base feed: by Marcel van Lieshout<br>
+      Admin for Data Feed : Tom O'Neill</td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><p><strong>Easy Populate:</strong> This is used to update product and category data, it allows you to updated data remotely on your local computer and upload to the data to your on line store.</p>
+      <ul>
+        <li><strong>Easy Populate Advance</strong><br>
+          Easy Populate Advance uses products_id instead of products_model to tie the rows in the Import/Export file to your database. This is significate since you now can delete items, asigning products to multiple categories, refine export files to select records you need to edit/update There also has been asignificant speed and record handling capibilities added to both Advance and Basic version. The numbers below are from recent test done, previously Easy populate could only handle 300 to 400 records max. </li>
+        <li><strong>Easy Populate Basic</strong><br>
+          Easy Populate basuc is for back ward compatiblity with  EP 2.XX version of Easy populate. This is because EP used modle numbers to tie you file  back to the database. Where in the advance version it used product_id.</li>
+        <li><strong>Increase in speed and record handling</strong>
+          <ul>
+            <li>Using only stock products<br>
+              export EPB ~ 32 records 0.173231 seconds file size 26kb<br>
+              import EPB ~32 records 1.844497 seconds file size 26kb<br>
+              export EPA~ 32 records 0.790210 seconds file size 26kb<br>
+              import EPA~ 32 records 1.759426 seconds file size 26kb</li>
+            <li>Using 2033 products in a single file<br>
+              import EPA 89.927511 second or 1 minute 30 sec file size 2.800 KB<br>
+              import EPB 456.582260 second or 7 minutes and 36 sec file size 3,423 KB</li>
+            <li>Deleting products:2033 products added<br>
+              delete EPA 68.877599 seconds File size was 2,875 KB<br>
+              <font style="color:#f00;">EPB cannot delete records.</font> </li>
+          </ul>
+        </li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td valign="top" class="main"><strong>Data Feed:</strong> Data feed takes the data with in your catalog and prepares it for submission to a feed service and send it to the feed service either automaticly or manualy if you need on completion of building the feed.</td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main"><strong>For EP Set Up:</strong> The setup information for Easy Populate is stored in admin/epconfigure.php. This configuration is for both Easy Populate Basic and Easy Populate Advance.</td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main"><strong>For Data Feeds Setp Up:</strong> To set up this modules data feed service, Review the 7 steps to your first feed. It outlines what steps you need to take to do a feed. It will take you through the configuration process to the uploading and checking of the feed.</td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main"><strong>Error and Staus Messages</strong><br>
+      All messages except the result of an import will apear near the top of the for, Blue background is for normal messages, red back ground for errors.<br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language .'/help/ep/images/epb_export_mesg.png');?></td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main"><strong>Import Result</strong><br>The Import result will now apear below the admin screen<br><?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/import_results.gif');?></td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main"><strong>Help while using the Admin Screens</strong><br>You will notice a <?php echo tep_image('images/information.png');?> through out the admin screens This is individual help for each setting or imput you could use. It will display a popup window with help.<br><?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/item_help.gif');?></td>
+  </tr>
+  <tr>
+    <td  valign="top" class="main">&nbsp;</td>
+  </tr>
+</table>

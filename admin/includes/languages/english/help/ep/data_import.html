@@ -1,0 +1,36 @@
+<?php
+/*
+  $Id: data_import.html,v 1.0.0.0 2008/05/13 13:41:11 wa4u Exp $
+
+  CRE Loaded, Open Source E-Commerce Solutions
+  http://www.creloaded.com
+
+  Copyright (c) 2008 CRE Loaded
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+
+*/
+?>
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td valign="top" class="main"><strong>Basic change with EPA:</strong><br>
+      The changes here are in the handling of HTML content in descriptions; image path URL's, and EP import filename requirements. You may now import files with html in the text fields and not have it mangled by EP or Excel.  URL's for images in subdirectories can be handled and correctly written to the database. Beginning with 2.75, EP Advanced will not install files unless it begins with EPA,and EP Basic will not install files that begin with EPA.  This feature is to protect the database from errors related to a new column added to the Easy populate file format. EP Advanced uses the product_id column, this allow for more features to be added.</td>
+    <td valign="top" class="main" align="center"><?php echo tep_image(DIR_WS_LANGUAGES . $language .'/help/ep/images/epa_import_start.png','The Import Screen','','','vspace="5" hspace="5" style="border:1px solid #ccc"');?><br>
+      The Import Screen.</td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="main"><strong>Upload EP File for Import:</strong><br>
+      To import a file into your catalog it must be first generated or in EPA format. This is the products_id is the first column in the upload file. The file should have EPA as the first three characters in its file name. If it does not then most likely you should use EP basic to import the file.<br>
+      <?php echo tep_image(DIR_WS_LANGUAGES . $language .'/help/ep/images/epa_import_uploaded_insert.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+      Upload will move the file from you local computer to the web server and import the data in the files to your databases. There is usually a limit within php which prevents files larger then 2mb from being uploaded. EPA will import more then 2,000 rows in one file, unlike older version that were limited to 300 to 400 maximum. If the file is larger then the limit set by PHP then you must upload the file via FTP then use the "Import Data from file in temp/' to import the data. If the file is still to large you can split it on the server by using "Split a EP File on the server". The list of files in the drop down is fileter so EPB file are not show. and file that are already spilt will not show.</td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="main"><strong>Upload and Split a EP File:</strong><br><?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_import_uploaded_results.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>
+    The upload results now apear below the insert screen.<br><?php echo tep_image(DIR_WS_LANGUAGES . $language . '/help/ep/images/epa_import_delete.png','','','','style="border:1px solid #ccc" vspace="5" hspace="5"');?><br>Since you now can delete records the message will apear as above when a recored is deleted.
+</td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" class="main">This routine incorporates the same changes noted above for import files. If for some reason you need to split you upload file into smaller parts then you can use this feature. Most site should not need to split files any more.</td>
+  </tr>
+</table>
