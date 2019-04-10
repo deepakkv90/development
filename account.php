@@ -26,7 +26,7 @@
   if ( ! isset($_SESSION['customer_id']) ) {
     $navigation->set_snapshot();
     tep_redirect(tep_href_link(FILENAME_LOGIN, '', 'SSL'));
-	echo "hai";
+	
   }
 
   require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_ACCOUNT);
