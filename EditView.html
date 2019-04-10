@@ -1,0 +1,625 @@
+<!--
+
+/**
+ * Advanced, robust set of sales and support modules.
+ * Extensions to OpenSales for SugarCRM
+ * @package Advanced OpenSales for SugarCRM
+ * @subpackage Products
+ * @copyright SalesAgility Ltd http://www.salesagility.com
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU AFFERO GENERAL PUBLIC LICENSE as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU AFFERO GENERAL PUBLIC LICENSE
+ * along with this program; if not, see http://www.gnu.org/licenses
+ * or write to the Free Software Foundation,Inc., 51 Franklin Street,
+ * Fifth Floor, Boston, MA 02110-1301  USA
+ *
+ * @author Greg Soper <greg.soper@salesagility.com>
+ */
+
+/**
+ * Advanced, robust set of sales and support modules.
+ * ORIGINAL AUTHOR
+ *
+ * @package OpenSales for SugarCRM
+ * @subpackage Products
+ * @copyright 2008 php|webpros.com(tm)  http://www.phpwebpros.com/
+ * 
+ *
+ * @author Rustin Phares <rustin.phares@phpwebpros.com>
+ */
+
+-->
+<!-- BEGIN: main -->
+<script src="modules/Accounts/jquery.1.4.4.js"></script>
+<script src="modules/Accounts/Account.js"></script>
+<link rel="stylesheet" type="text/css" href="modules/Accounts/Account.css" />
+<!---==================== Added by Biplab on 10-04-13 ============//--->
+<link href="custom/include/javascript/auto_complete_address/css/jquery-ui-1.8.9.custom.css" type="text/css" rel="stylesheet">
+<link href="custom/include/javascript/auto_complete_address/css/jquery.ui.combogrid.css" type="text/css" rel="stylesheet">
+
+<script src="custom/include/javascript/auto_complete_address/js/jquery-1.6.2.min.js"></script>
+<script src="custom/include/javascript/auto_complete_address/js/jquery-ui-1.8.9.custom.min.js"></script>
+<script src="custom/include/javascript/auto_complete_address/js/jquery.ui.combogrid-1.6.2.js"></script>
+<script src="custom/include/javascript/auto_complete_address/js/jquery.metadata.js"></script>
+<script src="custom/include/javascript/auto_complete_address/js/jquery.validate.min.js"></script>
+<!---<script src="include/javascript/auto_complete_address/js/jquery.main.combogrid.js"></script>//--->
+
+<script>
+//added by Basabdutta on 24.02.12
+function show_sample_div()
+{
+	if(document.getElementById('free_sample_y').checked)
+	{
+		document.getElementById('free_sample_div_1').style.display = 'block';
+		document.getElementById('free_sample_div_2').style.display = 'block';
+		document.getElementById('free_sample_div_3').style.display = 'block';
+		document.getElementById('free_sample_div_4').style.display = 'block';
+		document.getElementById('free_sample_div_5').style.display = 'block';
+		document.getElementById('free_sample_div_6').style.display = 'block';
+	}
+}
+function hide_sample_div()
+{
+	if(document.getElementById('free_sample_n').checked)
+	{
+		document.getElementById('free_sample_div_1').style.display = 'none';
+		document.getElementById('free_sample_div_2').style.display = 'none';
+		document.getElementById('free_sample_div_3').style.display = 'none';
+		document.getElementById('free_sample_div_4').style.display = 'none';
+		document.getElementById('free_sample_div_5').style.display = 'none';
+		document.getElementById('free_sample_div_6').style.display = 'none';
+		
+		document.getElementById('sample_product_sent_date').value = '';
+		document.getElementById('sample_product_name').value = '';
+		document.getElementById('sample_user_comment').value = '';
+	}
+}
+function add_extra_validation()
+{
+	var isError=false;
+	if(document.getElementById('gender_Male').checked==false && document.getElementById('gender_Female').checked==false)
+	{
+		add_error_style("EditView","hidden_gender","Missing required field: {MOD.LBL_GENDER}");
+		isError=true;
+	}
+	if(document.getElementById('free_sample_y').checked==false && document.getElementById('free_sample_n').checked==false)
+	{
+		add_error_style("EditView","hidden_free_sample","Missing required field: {MOD.LBL_FREE_SAMPLE}");
+		isError=true;
+	}
+	if(document.getElementById('free_sample_y').checked==true)
+	{
+		if(document.getElementById('sample_product_sent_date').value=='')
+		{
+			add_error_style("EditView","sample_product_sent_date","Missing required field: {MOD.LBL_PRODUCT_SENT_DATE}");
+			isError=true;
+		}
+		if(document.getElementById('sample_product_name').value=='')
+		{
+			add_error_style("EditView","sample_product_name","Missing required field: {MOD.LBL_PRODUCT_NAME}");
+			isError=true;
+		}
+		if(document.getElementById('sample_user_comment').value=='')
+		{
+			add_error_style("EditView","sample_user_comment","Missing required field: {MOD.LBL_SAMPLE_USER_COMMENT}");
+			isError=true;
+		}
+	}
+	
+	if(isError==true)
+		return false;
+	
+	return true;
+}
+
+//added by Basabdutta on 23.05.12 [for multiple contact]
+function changeContactDetails(primary_checkbox_id, email_inputbox_id)
+{
+	if(document.getElementById(primary_checkbox_id).checked)
+	{
+		var email 		= document.getElementById(email_inputbox_id).value;
+		var account_id 	= document.getElementById('record').value;
+		var temp		= email_inputbox_id.split("emailAddress"); 
+		
+		if(document.getElementById('emailAddressAccountId'+temp[1]))
+			var email_id= document.getElementById('emailAddressAccountId'+temp[1]).value;
+		
+		ajaxStatus.showStatus('Loading...');
+		var changeContactDetailsSuccess=function(data)
+		{
+			var obj = eval('('+ data.responseText +')');
+			document.getElementById('contact_id_c').value 	= obj.contact_id_c;
+			document.getElementById('contact_name_c').value = obj.contact_name;
+			if(obj.gender_c=='m')
+				document.getElementById('gender_Male').checked = true;
+			else if(obj.gender_c=='f')
+				document.getElementById('gender_Female').checked = true;
+			
+			ajaxStatus.hideStatus();
+		}
+		var url = "module=Accounts&action=bkAccount&sugar_body_only=true&topic=getContactDetails&account_id="+account_id+"&email_id="+email_id+"&email="+email+"&rand="+Math.random();
+		YAHOO.util.Connect.asyncRequest('POST','index.php',{'success':changeContactDetailsSuccess,'failure':null}, url);
+	}
+}
+</script>
+<!---===================== Jquery for Autocomplete function =========================--->
+<script type="text/javascript">
+function setFields(postcode){      
+   
+    $.post("index.php?module=Accounts&action=bkAccount&sugar_body_only=true&topic=get_details_by_postcode", { pCode: postcode },        
+		function(data) {
+			//alert(data.returnValue);   
+			if(data.returnValue==1) {       
+				$('#billing_address_country').val("");
+				$("#billing_address_state").val("");
+				$("#billing_address_city").val("");
+			}
+		},              
+		"json"
+    );  
+}
+
+   
+/*jQuery(document).ready(function(){
+   
+    //"keyup" event handler to reset input fields
+    $( "#billing_address_postalcode" ).live('keyup', function(){
+        if($( "#billing_address_postalcode" ).val().length==0){
+            $('#billing_address_city').val(""); $('#billing_address_state').val(""); $('#billing_address_country').val("");
+        }
+       
+        setFields($( "#billing_address_postalcode" ).val());
+       
+    });
+
+    assignCombo($("select#billing_address_country").val());
+       
+    //Form validation
+   $.validator.setDefaults({
+        submitHandler: function(form) {                   
+            form.submit();           
+        }
+    });       
+    $.metadata.setType("attr", "validate");
+   
+    $("#EditView").validate({
+        onfocusout: function(element, event) {
+            this.element(element);
+        },
+        onkeyup: false,
+        rules: {
+            gender: {
+              required: true             
+            },
+            firstname: {
+              required: true,
+              maxlength: 18,
+              minlength: 2
+            },
+            lastname: {
+              required: true,             
+              maxlength: 17,
+              minlength: 2
+            },
+            email_address: {
+              required: true,
+              email: true,             
+              remote: "check_email.php"
+            },
+            street_address: {
+              required: true,
+              maxlength: 40,
+              minlength: 5
+            },
+            postcode: {
+              required: true,
+              minlength: 4,
+              maxlength: 5
+            },
+            city: {
+              required: true             
+            },
+            state: {
+              required: true             
+            },
+            country: {
+              required: true             
+            },
+            telephone: {
+              required: true             
+            },
+            password: {
+              required: true             
+            },
+            confirmation: {
+              required: true             
+            },
+            visual_verify_code: {
+              required: true             
+            }
+        },
+        messages: {           
+            firstname: {
+              required: "Please enter Firstname",
+              maxlength: "Firstname should not exceeds 18 characters"
+            },
+            lastname: {
+              required: "Please enter Lastname",         
+              maxlength: "Lastname should not exceeds 17 characters"
+            },
+            email_address: {
+              required: "Please enter Email address",
+              email: "Email address must be valid",
+              remote: "Email Address already exists."
+            },           
+            street_address: {
+              required: "Please enter Street address",
+              maxlength: "Street Address should not exceeds 40 characters"
+            },
+            postcode: {
+                required: "Please enter PostCode",
+                minlength: "PostCode must contain at least 4 characters"
+            },
+            city: "Please enter City",
+            state: "Please enter State",
+            country: "Please enter Country",
+            telephone: "Please enter Telephone",
+            password: "Please enter Password",
+            confirmation: "Please enter Confirm Password"
+        }
+       
+    }); 
+    //Form validation
+   
+   
+});*/  
+</script>
+
+<form action="index.php" method="POST" name="EditView" id="EditView" onSubmit="return check_form('EditView') && add_extra_validation();">
+<table class="actionsContainer" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="buttons">
+
+<input name="module" value="Accounts" type="hidden">
+<input name="record" id="record"  value="{ID}" type="hidden">
+<input name="isDuplicate" value="false" type="hidden">
+<input name="action" type="hidden" value="Save">
+<input name="return_module" value="Accounts" type="hidden">
+<input name="return_action" value="index" type="hidden">
+<input name="return_id" value="{RETURN_ID}" type="hidden">
+<input name="module_tab" type="hidden"> 
+<input name="contact_role" type="hidden">
+<input name="relate_to" value="Accounts" type="hidden">
+<input name="relate_id" value="" type="hidden">
+<input name="offset" value="1" type="hidden">
+<input name="contact_fname" id="contact_fname"  value="{CONTACT_FNAME}" type="hidden">
+<input name="contact_lname" id="contact_lname"  value="{CONTACT_LNAME}" type="hidden">
+<input name="no_other_phone" id="no_other_phone" value="{NO_OTHER_PHONE}" type="hidden"> 
+<input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" type="submit" name="save_button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " >
+<input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accesskey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='index'; this.form.module.value='Accounts'; this.form.record.value='';" name="button" value="{APP.LBL_CANCEL_BUTTON_LABEL}" type="submit"> </td>
+<td align="right">
+</td>
+
+</tr>
+</tbody></table>
+<div id="EditView_tabs">
+<div>
+<div id="LBL_ACCOUNT_INFORMATION">
+<table class="edit view" border="0" cellpadding="0" cellspacing="1" width="100%">
+<tbody>
+<tr>
+	<th colspan="8" align="left"><h4>{MOD.LBL_ACCOUNT_OVERVIEW}</h4></th>
+</tr>
+<tr>
+	<td id="name_label" scope="row" valign="top" width="12.5%">{MOD.LBL_ACCOUNT_NAME}<span class="required">*</span></td>
+	<td valign="top" width="37.5%">
+		<input name="name" id="name" size="30" maxlength="150"  title="" tabindex="100" type="text" value="{NAME}">
+&nbsp;<span id='error_name'></span> 
+	</td>
+	<td>{MOD.LBL_GENDER}:<span class="required">*</span></td>
+	<td>
+		<input type="radio"  id="gender_Male" value="m" name="gender" {GENDER_CHECKED_MALE}>&nbsp;&nbsp;{MOD.LBL_GENDER_MALE}&nbsp;&nbsp;<input type="radio" {GENDER_CHECKED_FEMAILE}  id="gender_Female" value="f" name="gender">&nbsp;&nbsp;{MOD.LBL_GENDER_FEMALE}&nbsp;
+&nbsp;<input type="hidden" name="hidden_gender"> 
+	</td>
+</tr>
+<tr>
+    <td id="contact_name_c_label" scope="row" valign="top" width="12.5%">{MOD.LBL_LIST_CONTACT_NAME}:<span class="required">*</span></td>
+	<td valign="top" width="37.5%">
+		<input id="contact_id_c" name="contact_id_c" value="{CONTACT_ID}" type="hidden">
+		<input name="contact_name_c" id="contact_name_c" size="30" maxlength="255" value="{CONTACT_NAME}" title="" tabindex="101" type="text"> 
+&nbsp;<span id='error_contact_name'></span> 
+	</td>
+	<td>{MOD.LBL_DATE_ENTERED}:</td>
+	<td>{ACCT_DATE_ENTERED}</td>
+</tr>
+<tr>
+	<td id="customer_id_c_label" scope="row" valign="top" width="12.5%">{MOD.LBL_CUSTOMER_ID}:</td>
+	<td valign="top" width="37.5%">
+		<input name="customer_id_c" id="customer_id_c" size="30" maxlength="255" value="{CUSTOMER_ID_C}" title="" tabindex="102" type="text">
+	</td>
+	<td id="customer_no_c_label" scope="row" valign="top" width="12.5%">&nbsp;</td>
+	<td valign="top" width="37.5%">&nbsp;</td>
+</tr>
+<tr>
+	<td id="phone_office_label" scope="row" valign="top" width="12.5%">{MOD.LBL_PHONE_OFFICE}:</td>
+	<td  valign="top" width="37.5%">
+		<input name="phone_office" id="phone_office" size="30" maxlength="25" value="{PHONE_OFFICE}" title="" tabindex="106" type="text"> 
+		&nbsp;<span id='error_office_phone'></span><span class="required">*</span>
+		&nbsp;&nbsp;<button class="button" value="Add" onclick="add_phone();" type="button">
+		<img src="themes/default/images/id-ff-add.png?s=2ac247362529da28acf45c39225b10f9&c=1">
+		</button>  
+		<div id='phone_others_div'>{OTHER_PHONE}</div> 
+	</td>
+	<td id="phone_fax_label" scope="row" valign="top" width="12.5%">{MOD.LBL_PHONE_FAX}:</td>
+	<td valign="top" width="37.5%">
+		<input name="phone_fax" id="phone_fax" size="30" maxlength="25" value="{PHONE_FAX}" title="" tabindex="105" type="text"> 
+	</td>
+</tr>
+<tr>
+	<td id="is_visible_credit_mgmt_c_label" scope="row" valign="top" width="12.5%">{MOD.LBL_IS_VISIBLE_CREDIT_MGMT}:</td>
+	<td  valign="top" width="37.5%">
+		<input name="is_visible_credit_mgmt_c" value="0" type="hidden"> 
+		<input id="is_visible_credit_mgmt_c" name="is_visible_credit_mgmt_c" value="1" title="" tabindex="107"  type="checkbox" {CREDIT_CHECKED}>
+	</td>
+	<td>{MOD.LBL_LIST_WEBSITE}:</td>
+	<td>
+		<input type="text" tabindex="108" title="" value="{WEBSITE}" maxlength="255" size="30" id="website" name="website">
+	</td>
+</tr>
+<tr>
+	<td id="is_visible_macola_finance_c_label" scope="row" valign="top" width="12.5%">{MOD.LBL_TYPE}</td>
+	<td  valign="top" width="37.5%">
+		<select tabindex="110" title="" id="account_type" name="account_type">{ACCOUNT_TYPE_OPTIONS}</select>
+	</td>
+	<td>&nbsp;</td>
+	<td width="37.5%" valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td colspan="2" valign="top" width="37.5%">
+	<script type="text/javascript" src="include/SugarFields/Fields/Address/SugarFieldAddress.js?s=2ac247362529da28acf45c39225b10f9&amp;c=1"></script>
+	<fieldset id="BILLING_address_fieldset">
+	<legend>{MOD.LBL_BILLING_ADDRESS}</legend>
+	<table class="edit" border="0" cellpadding="0" cellspacing="1" width="100%">
+	<tbody>
+	<tr>
+		<td id="billing_address_street_label" scope="row" valign="top" width="25%">{MOD.LBL_STREET_1}:<span class="required">*</span></td>
+		<td width="*">
+			<input name="billing_address_street" id="billing_address_street" size="30" maxlength="150" value="{BILLING_ADDRESS_STREET}" type="text">
+		</td>
+	</tr>
+	<tr>
+		<td id="billing_address_street_2_label" scope="row" valign="top" width="25%">{MOD.LBL_STREET_2}:</td>
+		<td>
+			<input name="billing_address_street_2" id="billing_address_street_2" size="30" maxlength="150" value="{BILLING_ADDRESS_STREET_2}" type="text">
+		</td>
+	</tr>
+	<tr>
+		<td id="billing_address_postalcode_label" scope="row" width="%">{MOD.LBL_POSTAL_CODE}<span class="required">*</span></td>
+		<td>
+			<input name="billing_address_postalcode" id="billing_address_postalcode" class="ui-autocomplete-input input-bg error" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" role="textbox" size="30" maxlength="150" value="{BILLING_POST}" tabindex="110" type="text">
+		</td>
+	</tr>
+	<tr>
+		<td id="billing_address_city_label" scope="row" width="%">{MOD.LBL_LIST_CITY}:<span class="required">*</span></td>
+		<td>
+			<input name="billing_address_city" id="billing_address_city" size="30" maxlength="150" value="{CITY}" tabindex="110" type="text">
+		</td>
+	</tr>
+	<tr>
+		<td id="billing_address_state_label" scope="row" width="%">{MOD.LBL_STATE}<span class="required">*</span></td>
+		<td>
+			<div id='div_billing_state'>{BILLING_STATE}</div>
+		</td>
+		<!--<td>
+			<input name="billing_address_state" id="billing_address_state" size="30" maxlength="150" value="{BILLING_STATE}"  type="text">
+		</td>//-->
+	</tr>
+	<tr>
+		<td id="billing_address_country_label" scope="row" width="%">{MOD.LBL_COUNTRY}<span class="required">*</span></td>
+		<td>
+			<select name="billing_address_country" id="billing_address_country" onchange="fetch_state_based_on_country(this.value,'billing');">
+			{BILLING_COUNTRY}
+			</select>&nbsp;&nbsp;&nbsp;
+			<img src='themes/default/images/contact-loader.gif' style='display:none;' id='billing_country_loader'>
+		</td>
+	</tr>
+	<tr>
+		<td nowrap="" colspan="2" style='height:27px;'>&nbsp;</td>
+	</tr>
+	</tbody>
+	</table>
+	</fieldset>
+
+	<script type="text/javascript">
+		var fromKey = '';
+		var toKey = 'billing';
+		var checkbox = toKey + "_checkbox";
+		var obj = new TestCheckboxReady(checkbox);
+	</script>
+	</td>
+	<td colspan="2" valign="top" width="37.5%">
+		<script type="text/javascript" src="include/SugarFields/Fields/Address/SugarFieldAddress.js?s=2ac247362529da28acf45c39225b10f9&amp;c=1"></script>
+		<fieldset id="SHIPPING_address_fieldset">
+			<legend>{MOD.LBL_SHIPPING_ADDRESS}</legend>
+			<table class="edit" border="0" cellpadding="0" cellspacing="1" width="100%">
+			<tbody>
+			<tr>
+				<td id="shipping_address_street_label" scope="row" valign="top" width="25%">{MOD.LBL_STREET_1}:</td>
+				<td width="*">
+					<input name="shipping_address_street" id="shipping_address_street" size="30" maxlength="150" value="{SHIPPING_STREET}" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td id="shipping_address_street_2_label" scope="row" valign="top" width="25%">{MOD.LBL_STREET_2}:</td>
+				<td>
+					<input name="shipping_address_street_2" id="shipping_address_street_2" size="30" maxlength="150" value="{SHIPPING_STREET_2}" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td id="shipping_address_postalcode_label" scope="row" width="%">{MOD.LBL_POSTAL_CODE}</td>
+				<td>
+					<input name="shipping_address_postalcode" id="shipping_address_postalcode" size="30" maxlength="150" value="{SHIPPING_POST}" tabindex="111" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td id="shipping_address_city_label" scope="row" width="%">{MOD.LBL_LIST_CITY}:</td>
+				<td>
+					<input name="shipping_address_city" id="shipping_address_city" size="30" maxlength="150" value="{SHIPPING_CITY}" tabindex="111" type="text">
+				</td>
+			</tr>
+			<tr>
+				<td id="shipping_address_state_label" scope="row" width="%">{MOD.LBL_STATE}</td>
+				<td>
+					<div id="div_shipping_state">{SHIPPING_STATE}</div>  
+				</td>
+				<!--<td>
+					<input name="shipping_address_state" id="shipping_address_state" size="30" maxlength="150" value="{SHIPPING_STATE}" type="text">
+				</td>//-->
+
+			</tr>
+			<tr>
+				<td id="shipping_address_country_label" scope="row" width="%">{MOD.LBL_COUNTRY}:</td>
+				<td>
+					<select name="shipping_address_country" id="shipping_address_country" onchange="fetch_state_based_on_country(this.value,'shipping');">
+					{SHIPPING_COUNTRY}
+					</select><span id='error_country'></span> &nbsp;&nbsp;&nbsp;
+					<img src='themes/default/images/contact-loader.gif' style='display:none;' id='shipping_country_loader'>
+				</td>
+			</tr>
+			<tr>
+				<td scope="row" nowrap="nowrap">{MOD.LBL_COPY_ADDRESS}:</td>
+				<td>
+					<input id="shipping_checkbox" name="shipping_checkbox" onclick="syncFields('billing', 'shipping');" ;="" checked="checked" type="checkbox">
+				</td>
+			</tr>
+			</tbody>
+			</table>
+		</fieldset>
+		<script type="text/javascript">
+			var fromKey = 'billing';
+			var toKey = 'shipping';
+			var checkbox = toKey + "_checkbox";
+			var obj = new TestCheckboxReady(checkbox);
+		</script>
+	</td>
+</tr>
+<tr>
+	<td >{MOD.LBL_EMAIL} <span class="required">*</span></td>  
+	<td>  
+		<!--- modified by Basabdutta on 22.05.12 [for multiple contact]
+		<input name='email1' id='email1' value= '{EMAIL}' type='text' style='width:200px'>&nbsp;&nbsp;<span id='error_email'></span> --->
+		{EMAIL_HTML}
+	</td>
+	<td >{MOD.LBL_FREE_SAMPLE}: <span class="required">*</span></td>  
+	<td>  
+		<input type="radio" id="free_sample_y" value="1" name="free_sample" {SAMPLE_CHECKED_Y} onclick="show_sample_div();">&nbsp;&nbsp;Yes&nbsp;&nbsp;
+		<input type="radio" id="free_sample_n" value="0" name="free_sample" {SAMPLE_CHECKED_N} onclick="hide_sample_div();">&nbsp;&nbsp;No
+		<input type="hidden" name="hidden_free_sample"> 
+	</td>
+</tr>
+<tr>
+	<td >{MOD.LBL_ASSIGNED_TO_NAME}</td>
+	<td class="dataField"><span sugar='slot7b'>
+      <input class="sqsEnabled" tabindex="1" autocomplete="off" id="assigned_user_name" name='assigned_user_name' type="text" value="{ASSIGNED_USER_NAME}">
+      <input id='assigned_user_id' name='assigned_user_id' type="hidden" value="{ASSIGNED_USER_ID}" />
+  	  
+      <input title="{APP.LBL_SELECT_BUTTON_TITLE}" accessKey="{APP.LBL_SELECT_BUTTON_KEY}" tabindex="1" type="button" class="button" value='{APP.LBL_SELECT_BUTTON_LABEL}' name=btn1
+  	  onclick='open_popup("Users", 850, 600, "", true, false, {encoded_users_popup_request_data});' /></span sugar='slot'>
+	</td>
+	<td><div id="free_sample_div_1" style="display:{FREE_SAMPLE_DISPLAY};">{MOD.LBL_PRODUCT_SENT_DATE}: <span class="required">*</span></div></td>
+	<td>
+		<div id="free_sample_div_2" style="display:{FREE_SAMPLE_DISPLAY};">
+		<input name='sample_product_sent_date' onblur="parseDate(this, '{CALENDAR_DATEFORMAT}');" id='sample_product_sent_date' type="text" value="{PRODUCT_SENT_DATE}"> <img src="themes/default/images/jscalendar.gif" id="jscal_trigger"> 
+		<span id='error_sample_product_sent_date'></span>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td >{MOD.LBL_DESCRIPTION}</td>
+	<td><textarea id='description' name='description'>{DESCRIPTION}</textarea></td>
+	<td><div id="free_sample_div_3" style="display:{FREE_SAMPLE_DISPLAY};">{MOD.LBL_PRODUCT_NAME}: <span class="required">*</span></div></td>
+	<td>
+		<div id="free_sample_div_4" style="display:{FREE_SAMPLE_DISPLAY};">
+			<input type="text" id="sample_product_name" name="sample_product_name" value="{PRODUCT_NAME}">
+		</div>
+	</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><div id="free_sample_div_5" style="display:{FREE_SAMPLE_DISPLAY};">{MOD.LBL_SAMPLE_USER_COMMENT}: <span class="required">*</span></div></td>
+	<td>
+		<div id="free_sample_div_6" style="display:{FREE_SAMPLE_DISPLAY};">
+			<textarea id="sample_user_comment" name="sample_user_comment" maxlength="150" rows="2" cols="30">{USER_COMMENT}</textarea>
+		</div>
+	</td>
+</tr>
+</tbody>
+</table>
+</span>
+
+</div>
+
+<div>
+<table class="edit view" border="0" cellpadding="0" cellspacing="1" width="100%">
+<tbody>
+<tr>
+	<th colspan="8" align="left"><h4>{MOD.LBL_ACCOUNTANT_XERO_INFORMATION}</h4></th>
+</tr>
+<tr>
+<td width="20%">{MOD.LBL_ACCOUNTANT_NAME}</td>
+<td colspan="7" align="left"><input type="text" id="accountant_name" name="accountant_name" value="{ACCOUNTANT_NAME}"/></td>
+</tr>
+<tr>
+<td width="20%">{MOD.LBL_ACCOUNTANT_EMAIL}</td>
+<td colspan="7" align="left"><input type="text" id="accountant_email" name="accountant_email" value="{ACCOUNTANT_EMAIL}"/></td>
+</tr>
+<tr>
+<td width="20%">{MOD.LBL_SUBMIT_ACCOUNTANT_EMAIL_TO_X}</td>
+<td colspan="7" align="left">
+<input type="radio"  id="submit_accountant_email_y" value="1" {ACCOUNT_EMAIL_CHECKED_Y} name="submit_accountant_email_to_xero">&nbsp;&nbsp;{MOD.LBL_ACCOUNTANT_YES}&nbsp;&nbsp;
+<input type="radio"  id="submit_accountant_email_n" value="0" {ACCOUNT_EMAIL_CHECKED_N} name="submit_accountant_email_to_xero">&nbsp;&nbsp;{MOD.LBL_ACCOUNTANT_NO}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="buttons">
+<input title="{APP.LBL_SAVE_BUTTON_TITLE}" accessKey="{APP.LBL_SAVE_BUTTON_KEY}" class="button" type="submit" name="button" value="  {APP.LBL_SAVE_BUTTON_LABEL}  " > 
+<input title="{APP.LBL_CANCEL_BUTTON_TITLE}" accesskey="{APP.LBL_CANCEL_BUTTON_KEY}" class="button" onclick="this.form.action.value='index'; this.form.module.value='Accounts'; this.form.record.value='';" name="button" value="{APP.LBL_CANCEL_BUTTON_LABEL}" type="submit"> </div>
+ 
+<div id="fade" class="black_overlay"></div><br />
+<div id="light" class="white_content"></div> 
+</form>
+
+<script type="text/javascript">
+var selectButtonTitle = '{APP.LBL_SELECT_BUTTON_TITLE}';
+var selectButtonKey	  = '{APP.LBL_SELECT_BUTTON_KEY}';
+var selectButtonValue = '{APP.LBL_SELECT_BUTTON_LABEL}';
+var deleteButtonValue = '{MOD.LBL_REMOVE_PRODUCT_LINE}';
+</script>
+
+<script type="text/javascript">
+addToValidate("EditView", "billing_address_postalcode", "varchar", true, "{MOD.LBL_POSTAL_CODE}");
+
+Calendar.setup ({
+	inputField : "sample_product_sent_date", 
+	ifFormat : "{CALENDAR_DATEFORMAT}", 
+	showsTime : false, 
+	button : "jscal_trigger",
+	singleClick : true, 
+	step : 1
+}); 
+</script>
+{JAVASCRIPT}
+{PRODUCT_LINE_POPUP}
+<!-- END: main -->

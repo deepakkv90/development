@@ -1,0 +1,107 @@
+# $Id: .htaccess,v 3.0 2005/02/02 13:57:00 wilt Exp $
+# Author: Michael R. Bryant mrb@chainreactionweb.com
+#
+# This is used with Apache WebServers
+#
+# For this to work, you must include the parameter 'Options' to
+# the AllowOverride configuration
+#
+# Example:
+#
+# <Directory "/usr/local/apache/htdocs">
+#   AllowOverride Options
+# </Directory>
+#
+# 'All' with also work. (This configuration is in the
+# apache/conf/httpd.conf file)
+
+# The following makes adjustments to the SSL protocol for Internet
+# Explorer browsers
+
+<IfModule mod_setenvif.c>
+  <IfDefine SSL>
+    SetEnvIf User-Agent ".*MSIE.*" \
+             nokeepalive ssl-unclean-shutdown \
+             downgrade-1.0 force-response-1.0
+  </IfDefine>
+</IfModule>
+
+# Fix certain PHP values
+# (commented out by default to prevent errors occuring on certain
+# servers)
+
+<IfModule mod_php5.c>
+  php_flag register_long_arrays Off
+  php_flag register_globals Off 
+  php_flag display_errors Off
+</IfModule>
+
+<IfModule mod_php4.c>
+  php_value session.use_trans_sid 0
+  php_value register_globals 0
+  php_flag display_errors Off
+  php_flag track_errors Off
+</IfModule>
+
+#CRE_SEO Install Begin
+RewriteEngine on
+RewriteBase /
+
+#cre SEO check for images and skip all the other rules for performance reasons only
+RewriteRule ^.*\.gif|\.jpg|\.png|\.css|\.js|\.php$ - [L]
+
+# cre SEO reformats for product_info.html pages
+RewriteRule ^m(.*)/(.*)/p(.*)/(.*)/product_info\.html$ product_info.php?manufacturers_id=$1&products_id=$3 [QSA,L]
+RewriteRule ^p(.*)/(.*)/product_info\.html$ product_info.php?products_id=$1 [QSA,L]
+RewriteRule ^(.*)/c(.*)/p(.*)/(.*)/product_info\.html$ product_info.php?cPath=$2&products_id=$3 [QSA,L]
+
+# cre SEO reformat for index.html pages
+#RewriteRule ^m(.*)/(.*)/p(.*)/(.*)/$ index.php?manufacturers_id=$1&products_id=$3 [QSA,L]
+#RewriteRule ^m(.*)/(.*)/$ index.php?manufacturers_id=$1 [QSA,L]
+#RewriteRule ^(.*)/c(.*)/m(.*)/(.*)/p(.*)/(.*)/$ index.php?cPath=$2&products_id=$5 [QSA,L]
+#RewriteRule ^(.*)/c(.*)/p(.*)/(.*)/$ index.php?cPath=$2&products_id=$3 [QSA,L]
+#RewriteRule ^(.*)/c(.*)/$ index.php?cPath=$2 [QSA,L]
+
+RewriteRule ^m(.*)/(.*)/p(.*)/(.*)/index\.html$ index.php?manufacturers_id=$1&products_id=$3 [QSA,L]
+RewriteRule ^m(.*)/(.*)/index\.html$ index.php?manufacturers_id=$1 [QSA,L]
+RewriteRule ^(.*)/c(.*)/m(.*)/(.*)/p(.*)/(.*)/index\.html$ index.php?cPath=$2&products_id=$5 [QSA,L]
+RewriteRule ^(.*)/c(.*)/p(.*)/(.*)/index\.html$ index.php?cPath=$2&products_id=$3 [QSA,L]
+RewriteRule ^(.*)/c(.*)/index\.html$ index.php?cPath=$2 [QSA,L]
+
+# cre SEO reformat for information.html pages
+RewriteRule ^i(.*)/(.*)/information\.html$ information.php?info_id=$1 [QSA,L]
+
+# cre SEO reformat for pages.html pages
+RewriteRule ^p(.*)/(.*)/pages\.html$ pages.php?pID=$1 [QSA,L]
+RewriteRule ^(.*)/c(.*)/p(.*)/(.*)/pages\.html$ pages.php?cID=$2&pID=$3 [QSA,L]
+RewriteRule ^(.*)/c(.*)/pages\.html$ pages.php?cID=$2 [QSA,L]
+RewriteRule ^(.*)/CDpath(.*)/p(.*)/(.*)/pages\.html$ pages.php?CDpath=$2&pID=$3 [QSA,L]
+RewriteRule ^(.*)/CDpath(.*)/pages\.html$ pages.php?CDpath=$2 [QSA,L]
+
+# cre SEO reformat for articles.html pages
+RewriteRule ^(.*)/t(.*)/a(.*)/(.*)/articles\.html$ articles.php?tPath=$2&articles_id=$3 [QSA,L]
+RewriteRule ^(.*)/t(.*)/articles\.html$ articles.php?tPath=$2 [QSA,L]
+
+# cre SEO reformat for article_info.html pages
+RewriteRule ^a(.*)/(.*)/article_info\.html$ article_info.php?articles_id=$1 [QSA,L]
+RewriteRule ^(.*)/t(.*)/article_info\.html$ article_info.php?tPath=$2 [QSA,L]
+
+# cre SEO reformats for product_reviews.html pages
+RewriteRule ^p(.*)/(.*)/product_reviews\.html$ product_reviews.php?products_id=$1 [QSA,L]
+RewriteRule ^(.*)/c(.*)/p(.*)/(.*)/product_reviews\.html$ product_reviews.php?products_id=$3 [QSA,L]
+
+# cre SEO reformats for product_reviews_info.html pages
+RewriteRule ^p(.*)/(.*)/review(.*)/product_reviews_info\.html$ product_reviews_info.php?products_id=$1&reviews_id=$3 [QSA,L]
+
+# cre SEO reformat for FDMS pages
+RewriteRule ^f(.*)/(.*)/fdm_file_detail\.html$ fdm_file_detail.php?file_id=$1 [QSA,L]
+RewriteRule ^(.*)/fPath(.*)/fdm_folder_files\.html$ fdm_folder_files.php?fPath=$2 [QSA,L]
+
+# cre SEO reformat for FSS pages
+RewriteRule ^(.*)/fPath(.*)/form(.*)/(.*)/fss_forms_detail\.html$ fss_forms_detail.php?fPath=$2&forms_id=$3 [QSA,L]
+RewriteRule ^(.*)/fPath(.*)/fss_forms_index\.html$ fss_forms_index.php?fPath=$2 [QSA,L]
+
+
+#cre SEO catch all in case other rules did not match
+RewriteRule ^(product_info|index|information|pages|articles|article_info|product_reviews|product_reviews_info)\.html$ $1.php [QSA,L]
+

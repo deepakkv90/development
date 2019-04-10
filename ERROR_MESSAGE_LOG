@@ -1,0 +1,116 @@
+#0  _error_handler(Query Error reported on page /index.php
+MySQL error:  - 
+
+select c.categories_id, cd.categories_name,parent_id from categories c, categories_description cd where c.categories_id = '28'  and c.categories_id = cd.categories_id
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select c.categories_id, cd.categories_name,parent_id from categories c, categories_description cd where c.categories_id = '28'  and c.categories_id = cd.categories_id, , ) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select c.categories_id, cd.categories_name,parent_id from categories c, categories_description cd where c.categories_id = '28'  and c.categories_id = cd.categories_id) called at [/home/badge64/public_html/url_rewrite.php:24]
+#3  include(/home/badge64/public_html/url_rewrite.php) called at [/home/badge64/public_html/includes/application_top.php:223]
+#4  require(/home/badge64/public_html/includes/application_top.php) called at [/home/badge64/public_html/index.php:13]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 2006 - MySQL server has gone away
+
+SELECT * FROM artwork_option WHERE artwork_option_id='1459'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(SELECT * FROM artwork_option WHERE artwork_option_id='1459', 2006, MySQL server has gone away) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(SELECT * FROM artwork_option WHERE artwork_option_id='1459') called at [/home/badge64/public_html/includes/functions/general.php:1937]
+#3  tep_get_option_details(1459) called at [/home/badge64/public_html/artwork_options.php:107]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 2006 - MySQL server has gone away
+
+SELECT * FROM artwork_option WHERE artwork_option_id='1760'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(SELECT * FROM artwork_option WHERE artwork_option_id='1760', 2006, MySQL server has gone away) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(SELECT * FROM artwork_option WHERE artwork_option_id='1760') called at [/home/badge64/public_html/includes/functions/general.php:1937]
+#3  tep_get_option_details(1760) called at [/home/badge64/public_html/artwork_options.php:107]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 2006 - MySQL server has gone away
+
+SELECT * FROM artwork_option WHERE artwork_option_id='1760'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(SELECT * FROM artwork_option WHERE artwork_option_id='1760', 2006, MySQL server has gone away) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(SELECT * FROM artwork_option WHERE artwork_option_id='1760') called at [/home/badge64/public_html/includes/functions/general.php:1937]
+#3  tep_get_option_details(1760) called at [/home/badge64/public_html/artwork_options.php:107]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+select customers_email_address from customers where customers_email_address = 'tracy@elitespecialists.com.au'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select customers_email_address from customers where customers_email_address = 'tracy@elitespecialists.com.au', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select customers_email_address from customers where customers_email_address = 'tracy@elitespecialists.com.au') called at [/home/badge64/public_html/check_email.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+SELECT * FROM artwork_option WHERE artwork_id='1988' ORDER BY artwork_option_id ASC
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(SELECT * FROM artwork_option WHERE artwork_id='1988' ORDER BY artwork_option_id ASC, 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(SELECT * FROM artwork_option WHERE artwork_id='1988' ORDER BY artwork_option_id ASC) called at [/home/badge64/public_html/includes/functions/general.php:1928]
+#3  tep_get_artwork_option(1988) called at [/home/badge64/public_html/artwork_options_feedback.php:24]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+select * from postcode where postcode = '4'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '4', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '4') called at [/home/badge64/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+select * from postcode where postcode = '40'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '40', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '40') called at [/home/badge64/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+select * from postcode where postcode = '406'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '406', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '406') called at [/home/badge64/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+select * from postcode where postcode = '4069'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '4069', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '4069') called at [/home/badge64/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1040 - Too many connections
+
+SELECT * FROM artwork WHERE artwork_id='undefined'
+
+) called at [/home/badge64/public_html/includes/functions/database.php:43]
+#1  tep_db_error(SELECT * FROM artwork WHERE artwork_id='undefined', 1040, Too many connections) called at [/home/badge64/public_html/includes/functions/database.php:60]
+#2  tep_db_query(SELECT * FROM artwork WHERE artwork_id='undefined') called at [/home/badge64/public_html/artwork_options.php:123]
+
+

@@ -1,0 +1,77 @@
+# CRELoaded Generated Robots.txt
+# Robot Exclusion File -- robots.txt
+# Author:  CRELoaded Team 
+# Last Updated : FEB 23rd, 2015
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cache/
+Disallow: /cert/
+Disallow: /debug/
+Disallow: /download/
+Disallow: /ext/
+Disallow: /includes/
+Disallow: /pear/
+Disallow: /pub/
+Disallow: /temp/
+Disallow: /templates/
+Disallow: /tmp/
+Disallow: /images/
+Disallow: /images/users_badges/
+Disallow: /ajpcrm/
+#Block out things that are secure or login oriented
+#These are based on not using any rewrite rules
+Disallow: /account.php
+Disallow: /account_edit.php
+Disallow: /account_history.php
+Disallow: /account_history_info.php
+Disallow: /account_password.php
+Disallow: /address_book.php
+Disallow: /address_book_process.php
+Disallow: /checkout_confirmation.php
+Disallow: /checkout_payment.php
+Disallow: /checkout_payment_address.php
+Disallow: /checkout_process.php
+Disallow: /checkout_shipping.php
+Disallow: /checkout_shipping_address.php
+Disallow: /checkout_success.php
+Disallow: /cookie_usage.php
+Disallow: /create_account.php
+Disallow: /shopping_cart.php
+Disallow: /create_account_success.php
+Disallow: /ipn.php
+Disallow: /login.php
+Disallow: /logoff.php
+Disallow: /password_forgotten.php
+Disallow: /paypal_notify.php
+Disallow: /redirect.php
+Disallow: /shipping_estimator_popup.php
+Disallow: /ssl_check.php
+Disallow: /vvc_display.php
+Disallow: /wpcallback.php
+
+#To prevent only a select bots from any scans
+#User-agent: crawlers.looksmart.com
+#Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: solomono
+Disallow: /
+
+#To prenet any images from being scanned
+#Disallow: *.gif
+#Disallow: *.jpg
+#Disallow: *.png
+
+#To block main page due to size from bots
+#Disallow: /index.php
+
+#To shut down site completely from bots use
+# Disallow: /
+
+# IF YOU DO NOT WISH TO HAVE THE GOOGLE IMAGE BOT SCAN YOUR DOMAIN FOR IMAGES
+# THEN YOU CAN INCLUDE THE FOLLOWING IN YOUR ROBOTS FILE.
+# I FOUND THAT MY BANDWIDTH USAGE DROPPED BY A MASSIVE AMOUNT AFTER I GOT RID
+# OF THE GOOGLE IMAGE BOT. ALL I HAD WAS IMAGE HUNTERS STEALING
