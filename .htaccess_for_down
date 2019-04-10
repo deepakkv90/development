@@ -1,0 +1,6 @@
+#Down for maintenance page redirect
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/index\.htm$
+RewriteRule ^(.*)$ http://namebadgesinternational.com.au/index.htm [R=307,L]
+#Down for maintenance page redirect
