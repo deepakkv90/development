@@ -1,0 +1,30 @@
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1
+
+select * from postcode where postcode = '\'
+
+) called at [/home/npi/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '\', 1064, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''\'' at line 1) called at [/home/npi/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '\') called at [/home/npi/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2200\'' at line 1
+
+select * from postcode where postcode = '2200\'
+
+) called at [/home/npi/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '2200\', 1064, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2200\'' at line 1) called at [/home/npi/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '2200\') called at [/home/npi/public_html/get_details_by_postcode.php:16]
+
+
+#0  _error_handler(Query Error reported on page 
+MySQL error: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''33\'' at line 1
+
+select * from postcode where postcode = '33\'
+
+) called at [/home/npi/public_html/includes/functions/database.php:43]
+#1  tep_db_error(select * from postcode where postcode = '33\', 1064, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''33\'' at line 1) called at [/home/npi/public_html/includes/functions/database.php:60]
+#2  tep_db_query(select * from postcode where postcode = '33\') called at [/home/npi/public_html/get_details_by_postcode.php:16]
+
+

@@ -1,0 +1,2 @@
+You can use this directlory to load your custom template content files.
+You don't need to copy all files from templates/content/ add only which you have modified.

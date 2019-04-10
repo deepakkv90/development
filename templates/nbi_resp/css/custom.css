@@ -1,0 +1,347 @@
+/* Added by Ananth and vanitha */
+#content .content-box {
+	float:left;
+	width:48%;
+}
+
+#content .content-box p {
+	padding:10px;
+	text-align:justify;
+}
+
+#content .content-box img {
+	float:left;
+	width:48%;
+}
+
+#content .content-box pimg {
+	float:left;
+	width:48%;
+}
+
+#content .content-box a {
+	color:#7A0f13;
+	font-weight: bold;
+}
+
+#content .content .left a {
+color:#7A0f13; 
+font-weight: bold;
+}	
+
+#content .content-box table{
+	float:center;
+	width:48%;
+}
+
+.header-message {
+	float:left;
+	font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22222;
+    overflow: hidden;
+    padding-top: 4px;
+}
+p  a{color:#7A0f13; font-weight: bold; }
+
+#content .content-box img { width:100%; height:auto; }
+
+#content .content-box pimg { width:100%; height:auto; }
+
+#content .cls-img img { width:100%; height:auto; }
+
+#content .content-box table { width:100%; height:auto; }
+
+#content .content-box-left {
+	float:left;
+	width:65%;
+}
+
+#content .content-box-left p {
+	padding:10px;
+	text-align:justify;
+}
+
+#content .content-box-right img { width:100%; height:auto; }
+
+.product-grid .name-product a { font-size:16px; text-align: center; font-weight: bold; line-height:18px; text-decoration: none; display:inline-block; margin:0 auto; padding:0px; color:#333; }
+
+.badge-desc { font-size:11px; }
+
+.highlight { background: #e9f3fa none repeat scroll 0 0; padding:15px; }
+
+.caps { text-transform:uppercase; }
+
+.text-right { text-align:right; }
+
+.text-center { text-align:center; }
+
+.live-chat { z-index:998; bottom:0px; left:70%; position:fixed; }
+
+form.frmCustom > label, form.frmCustom > input, form.frmCustom > span { float:left; padding:10px; font-size:14px; font-weight:bold; margin-top:5px; }
+
+form.frmCustom > label, form.frmCustom > input { width:60px; }
+
+form.frmCustom > .button { margin-left: 80px; margin-top: 5px; width:auto; }
+
+.tbhead {	
+	background-color: #d3e6f5;
+    border-bottom: 1px solid #cecece;
+    color: #10314f;
+    font-weight: bold;
+    padding: 10px 7px;
+    
+	text-align:center;
+}
+
+.tbhead > td {
+	
+	padding:5px;
+	
+}
+
+/*Listing item after slider*/
+div.box-home-container {
+	text-align: center;
+	border-radius:4px;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding:5px;
+}
+div.box-home {
+	width:33%;
+	box-sizing: border-box;
+    display: inline-block;
+    padding-right: 2px;
+    vertical-align: top;
+}
+
+div.box-home a.quote { background-image: url("/images/instantquote-nameplates.png"); background-size: 200px 100px; background-repeat: no-repeat; }
+div.box-home a.sample { background-image: url('/images/minorder-nameplates.png'); background-size: 200px 100px; background-repeat: no-repeat; }
+div.box-home a.delivery { background-image: url('/images/fast-delivery-officesigns.png'); background-size: 200px 100px; background-repeat: no-repeat; }
+
+div.box-home a {
+	background-color: #cddde9;
+    border: 1px solid #8ea6bb;
+    border-radius: 4px;
+    display: block;
+    height: 106px;
+    overflow: hidden;
+    transition: background-color 0.1s ease-out 0s;
+}
+
+div.box-home a:hover {
+	background-color: #dce6ef;
+}
+
+div.box-home a span
+{
+	
+	color: #186699;
+    display: table-cell;
+    font-family: LiberationSans-Regular,sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    float:right;
+	line-height: 1.233;
+    margin-top: 20px;
+	width:50%;
+}
+
+/* Listing item after slider end */
+
+@media screen and (max-width:900px) {
+
+	.header-message { font-size:16px; }
+	
+	#menu > ul > li > a {
+		
+		font-size: 0.9em;
+	}
+	
+	div.box-home { width:32%;  }
+
+
+}
+
+
+
+@media screen and (max-width:800px) {
+	
+	#content .content-box { width:100%; }
+	#pricelist.table.pricelist{width:100%;}
+	#contactform.myForm {width:100%;}
+	.header-message { display:none; }
+	.badge-desc { font-size:9px; }
+	
+	/*Listing item after slider*/
+
+	div.box-home {
+		width:30%!important;
+		margin:5px;
+	}
+
+	div.box-home a {
+		height: 50px!important;
+		padding: 3px;
+	}
+	
+	div.box-home a span { margin-top:12px!important; font-size: 16px; width:55%; }
+	
+	div.box-home a.quote { background-image: url("/images/instantquote-nameplates-small.png")!important; background-size: 90px 55px!important; } 
+	div.box-home a.sample { background-image: url('/images/minorder-nameplates-small.png')!important; background-size: 90px 55px!important; } 
+	div.box-home a.delivery { background-image: url('/images/fast-delivery-nameplates-small.png')!important; background-size: 90px 55px!important; } 
+
+	/* Listing item after slider end */
+
+	
+}
+
+
+
+/* For Pricelist Table*/
+
+#pricelist {
+border-collapse:collapse;
+text-align: center;
+color: #000000;
+}
+
+#pricelist th, #table.pricelist td {
+border: 1px solid black;
+line-height: 1.8em;
+}
+
+#pricelist th {
+width:10%;
+background-color: #A81D21;
+color: #ffffff;
+}
+
+#pricelist tr.odd  th, tr.odd  td {
+background-color: #F0DFE0;
+}
+
+#pricelist th.size {
+background-color: #ffffff;
+color: #000000;
+}
+
+#pricelist td.poa {
+background-color: #E3B5B6;
+}
+
+#pricelist th.sizepoa {
+background-color: #E3B5B6;
+color: #000000;
+}
+
+/* Pricelist Table End*/
+
+input[type="text"].custom-field  { width:60%!important; }
+textarea.custom-field  { width:95%!important; }
+
+/* For Delivery Options Page*/
+
+table.DataMatrix {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	width: 100%;
+}
+
+	table.DataMatrix th,
+	table.DataMatrix td {
+		background: #fff;
+		/*border-left: 1px solid #738da3;*/
+		color: #5c5c5c;
+		font-weight: normal;
+		padding: 7px 8px;
+		text-align: center;
+	}
+
+	table.DataMatrix th.min,
+	table.DataMatrix td.min {
+		width: 1%;
+		white-space: nowrap;
+	}
+
+	table.DataMatrix th.strong,
+	table.DataMatrix td.strong {
+		font-weight: bold;
+	}
+
+	table.DataMatrix .spacer-row th,
+	table.DataMatrix .spacer-row td {
+		padding: 20px 0 0 0;
+	}
+
+	table.DataMatrix th:first-child,
+	table.DataMatrix td:first-child {
+		/*border-left: 0 none;*/
+		text-align: left;
+	}
+
+	table.DataMatrix td.align-left,
+	table.DataMatrix th.align-left {
+		text-align: left;
+	}
+
+	table.DataMatrix td.align-right,
+	table.DataMatrix th.align-right {
+		text-align: right;
+	}
+
+	table.DataMatrix .DataMatrix_titleRow th,
+	table.DataMatrix .DataMatrix_titleRow td {
+		background-color: #10314f;
+		border-left-color: #10314f;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	table.DataMatrix .DataMatrix_titleRow .contains-anchor {
+		padding: 0 !important;
+	}
+
+	table.DataMatrix .DataMatrix_titleRow a,
+	table.DataMatrix .DataMatrix_titleRow .a {
+		color: #fff;
+		display: block;
+		padding: 7px 8px;
+		text-decoration: none;
+	}
+
+	table.DataMatrix .DataMatrix_titleRow a:hover {
+		background-color: #084378;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	table.DataMatrix .DataMatrix_headingRow th,
+	table.DataMatrix .DataMatrix_headingRow td {
+		background-color: #d3e6f5;
+		color: #10314f;
+		font-weight: bold;
+	}
+
+	table.DataMatrix .DataMatrix_dataRow th {
+		color: #333;
+	}
+
+	.zebra-rows .DataMatrix_dataRow.even th,
+	.zebra-rows .DataMatrix_dataRow.even td,
+	.zebra-cols .DataMatrix_dataRow th.even,
+	.zebra-cols .DataMatrix_dataRow td.even {
+		background-color: #edeef0;
+	}
+
+	table.DataMatrix .DataMatrix_dataRow th.em,
+	table.DataMatrix .DataMatrix_dataRow td.em {
+		background-color: #d3e6f5;
+		color: #10314f;
+		font-weight: bold;
+	}
+
+/*Delivery Options Page End*/
+

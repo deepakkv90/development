@@ -1,0 +1,108 @@
+[17-Mar-2016 21:47:36] PHP Parse error:  syntax error, unexpected $end in /home/npi/public_html/templates/nbi_resp/main_page.tpl.php on line 88
+[18-Mar-2016 15:17:22] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/shopping_cart.tpl.php on line 220
+[18-Mar-2016 15:17:50] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/shopping_cart.tpl.php on line 220
+[18-Mar-2016 15:18:07] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/shopping_cart.tpl.php on line 220
+[18-Mar-2016 15:19:27] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/shopping_cart.tpl.php on line 220
+[28-Apr-2016 22:42:27] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[28-Apr-2016 22:42:27] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[29-Apr-2016 10:47:37] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[29-Apr-2016 10:47:37] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[29-Apr-2016 12:24:59] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[29-Apr-2016 12:24:59] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[12-May-2016 10:30:57] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[12-May-2016 10:31:48] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[12-May-2016 10:33:09] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[07-Jun-2016 14:50:20] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[07-Jun-2016 14:51:01] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[07-Jun-2016 14:51:16] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[07-Jun-2016 14:51:31] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[07-Jun-2016 14:52:02] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[11-Jul-2016 13:54:55] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[11-Jul-2016 13:55:23] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[11-Jul-2016 13:56:26] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[11-Jul-2016 13:57:20] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[13-Jul-2016 16:54:28] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[13-Jul-2016 16:55:45] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[13-Jul-2016 16:57:43] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[14-Jul-2016 11:46:49] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[14-Jul-2016 15:31:18] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[14-Jul-2016 15:38:53] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[14-Jul-2016 15:38:53] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 69
+[14-Jul-2016 15:39:06] PHP Fatal error:  Call to undefined function  tep_badge_long_desc() in /home/npi/public_html/templates/nbi_resp/content/checkout_confirmation.tpl.php on line 73
+[14-Jul-2016 16:53:57] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[18-Jul-2016 15:47:48] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:47:48] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:48:35] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:48:35] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:48:35] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[18-Jul-2016 15:48:35] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[19-Jul-2016 09:55:28] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[19-Jul-2016 09:55:28] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[19-Jul-2016 09:55:28] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[19-Jul-2016 09:55:28] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:53] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:53] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:53] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:53] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:54] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:55] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[21-Jul-2016 13:03:55] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 15:02:31] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 15:02:31] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 15:52:51] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 15:52:51] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 19:34:38] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 19:34:38] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[02-Aug-2016 19:34:47] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[02-Aug-2016 20:09:03] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[02-Aug-2016 20:17:15] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[02-Aug-2016 20:17:31] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[02-Aug-2016 20:17:36] PHP Fatal error:  Call to undefined function  tep_badge_short_desc() in /home/npi/public_html/templates/nbi_resp/content/account_history_info.tpl.php on line 68
+[20-Aug-2016 10:07:06] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[09-Oct-2016 23:54:50] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[16-Nov-2016 12:40:21] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[16-Nov-2016 11:47:20] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[12-Feb-2017 13:46:36] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[12-Feb-2017 12:58:21] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[17-Feb-2017 01:52:39] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[08-Mar-2017 12:22:24] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[04-May-2017 19:26:38] PHP Warning:  imagettftext() [<a href='function.imagettftext'>function.imagettftext</a>]: Could not find/open font in /home/npi/public_html/imagegettext.php on line 21
+[04-May-2017 19:26:38] PHP Warning:  imagettftext() [<a href='function.imagettftext'>function.imagettftext</a>]: Could not find/open font in /home/npi/public_html/imagegettext.php on line 24
+[04-May-2017 19:26:41] PHP Warning:  imagettftext() [<a href='function.imagettftext'>function.imagettftext</a>]: Could not find/open font in /home/npi/public_html/imagegettext.php on line 21
+[04-May-2017 19:26:41] PHP Warning:  imagettftext() [<a href='function.imagettftext'>function.imagettftext</a>]: Could not find/open font in /home/npi/public_html/imagegettext.php on line 24
+[11-May-2017 12:31:17] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[11-May-2017 12:42:55] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[14-Jul-2017 18:12:59] PHP Parse error:  syntax error, unexpected '[' in /home/npi/public_html/curl_check.php on line 6
+[14-Jul-2017 18:15:33] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting '(' in /home/npi/public_html/curl_check.php on line 7
+[31-Jul-2017 12:28:57] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_thumb.php/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[31-Jul-2017 12:28:58] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[31-Jul-2017 12:32:38] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[07-Aug-2017 11:48:50] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[07-Nov-2017 15:05:25] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[07-Nov-2017 14:14:33] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[15-Jan-2018 14:58:50] PHP Warning:  file(/home/npi/public_html/home/npi/public_html/image_thumb.php/images/icons/image_error.png) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home/npi/public_html/image_thumb.php on line 127
+[15-Jan-2018 14:58:50] PHP Warning:  join() [<a href='function.join'>function.join</a>]: Invalid arguments passed in /home/npi/public_html/image_thumb.php on line 127
+[04-Feb-2018 13:34:49] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[03-May-2018 12:24:32] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[01-Jun-2018 17:02:17] PHP Parse error:  syntax error, unexpected '<' in /home/npi/public_html/includes/header_tags.php on line 662
+[01-Jun-2018 17:02:31] PHP Parse error:  syntax error, unexpected '<' in /home/npi/public_html/includes/header_tags.php on line 662
+[26-Jun-2018 09:38:52] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[26-Jun-2018 09:42:33] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[26-Jun-2018 09:45:35] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[31-Jul-2018 03:48:36] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[31-Jul-2018 03:56:02] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[26-Oct-2018 13:30:05] PHP Warning:  Division by zero in /home/npi/public_html/get_combo_data.php on line 31
+[26-Oct-2018 12:41:41] PHP Fatal error:  Class 'popupBoxHeading' not found in /home/npi/public_html/info_shopping_cart.php on line 31
+[28-Nov-2018 18:57:04] PHP Warning:  require(/home/buttonbadgesinte/public_html/dev/bbi/includes/database_tables.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/buttonbadgesinte/public_html/dev/includes/application_top.php on line 205
+[28-Nov-2018 18:57:04] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/buttonbadgesinte/public_html/dev/bbi/includes/database_tables.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/buttonbadgesinte/public_html/dev/includes/application_top.php on line 205

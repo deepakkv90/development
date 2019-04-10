@@ -1,0 +1,57 @@
+div.fum_container {
+  border: 1px dotted gray;
+  text-align: center;
+  float: left;
+  margin: 4px;
+  font-family: Arial, Tahoma;
+  font-size: 10pt;
+  overflow: hidden;
+}
+
+div.fum_container a {
+  cursor: pointer;
+  font-weight: bold; 
+}
+
+div.fum_container_file a {
+  cursor: pointer;
+}
+
+div.fum_container_file span {
+  vertical-align: middle;
+  font-size: 34pt;
+}
+
+div.fum_upload_indicator {
+  float: left;
+  background-image: url(ajax_upload.gif);
+  background-repeat: no-repeat;
+  padding-left: 18px;
+  margin: 4px;
+  font-family: Arial, Tahoma;
+  font-size: 10pt;
+  width: auto;
+}
+	/* Light Box style*/
+.black_overlay {
+	top: 0%;
+	left: 0%;
+	position: relative;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+.white_content {
+	position: relative;
+	width: 700px;
+	height: 350px;
+	padding: 16px;
+	background-color: #3C3B3B;
+	background-image: url(ajax_loader.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	z-index:1002;
+	overflow: auto;
+}

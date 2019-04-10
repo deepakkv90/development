@@ -1,0 +1,156 @@
+/* fdm_styles bof */
+
+ #buttonDownload {
+  border-style: outset;
+  border-color: #003300;
+  background-color: #009933;
+  text-decoration: none;   
+  width: 180px;
+  text-align: center;
+}
+ 
+.buttonDownloadText {
+  color: white; 
+  text-decoration: none;   
+  font: bold 12pt Verdana;
+  cursor: hand;
+}
+
+.buttonDownloadOver {
+  color: yellow; 
+  text-decoration: none;
+  font: bold 12pt Verdana;
+          cursor: hand;
+}
+
+ #buttonLogin {
+  border-style: outset;
+  border-color: #996600;
+  background-color: #FFCC00;
+  text-decoration: none;   
+  width: 220px;
+  text-align: center;
+}
+ 
+.buttonLoginText {
+  color: black; 
+  text-decoration: none;   
+  font: bold 12pt Verdana;
+  cursor: hand;
+}
+
+ #buttonReqP {
+  border-style: outset;
+  border-color: #996600;
+  background-color: #FFCC00;
+  text-decoration: none;   
+  width: 220px;
+  text-align: center;
+}
+ 
+.buttonReqPText {
+  color: black; 
+  text-decoration: none;   
+  font: bold 12pt Verdana;
+  cursor: hand;
+}
+
+ #buttonUnavail {
+  border-style: outset;
+  border-color: #800000;
+  background-color: #CC0000;
+  text-decoration: none;   
+  width: 200px;
+  text-align: center;
+}
+ 
+.buttonUnavailText {
+  color: white; 
+  text-decoration: none;   
+  font: bold 12pt Verdana;
+  cursor: hand;
+}
+
+.filesListing-main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  padding-left:20px;
+}
+
+.filesListing-name {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.filesListingCol { background: #CCCCCC; }
+.filesListingBoxHeader { background: #bbc3d3; }
+.filesListing-odd { background: #f8f8f9; }
+.filesListing-even { background: #e8f2ff; }
+
+SPAN.authText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #006600; 
+  font-weight: bold;
+}
+
+TD.fileDetailInfo {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #b6b7cb;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.fileListing {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #b6b7cb;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.fileListing_heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left:20px;
+}
+
+TD.fileListingReqP {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+TD.fileListing_header {
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #b6b7cb;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.fileListing_left {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: #b6b7cb;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.fileListing_left_header {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-color: #b6b7cb;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* fdm_styles eof */

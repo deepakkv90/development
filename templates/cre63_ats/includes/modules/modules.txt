@@ -1,0 +1,27 @@
+You can use this directlory to load your custom modules.
+
+Currently this directory supports,
+
+product_listing.php
+product_listing_col.php
+link_listing.php
+shipping_estimator.php
+new_products.php -> displayed on category listing
+article_listing.php
+
+login_acc.php -> login and regiter module
+login_pwa.php -> purchasae without account module
+Order_Info_Check.php -> PWA form
+
+
+also_purchased_products.php 
+additional_images.php
+xsell_products_buynow.php
+product_quantity_table.php -> Pro and B2B
+
+
+
+
+
+
+

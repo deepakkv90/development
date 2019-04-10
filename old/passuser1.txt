@@ -1,0 +1,1 @@
+Couldn't resolve host 'NBI_PAYPAL_IPN_SYNC_URL'

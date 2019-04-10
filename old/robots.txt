@@ -1,0 +1,43 @@
+# CRELoaded Generated Robots.txt
+# Robot Exclusion File -- robots.txt
+# Author:  CRELoaded Team 
+# Last Updated : Nov 12, 2018
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cache/
+Disallow: /cert/
+Disallow: /debug/
+Disallow: /download/
+Disallow: /ext/
+Disallow: /includes/
+Disallow: /pear/
+Disallow: /pub/
+Disallow: /temp/
+Disallow: /images/
+Disallow: /templates/
+Disallow: /tmp/
+Disallow: /DownloadFiles/
+Disallow: /images/users_badges/
+Disallow: /maintenance.html
+Disallow: /index.php/
+Disallow: /*?CDpath=0
+Disallow: /*?cPath=84
+Disallow: /*?cdpath=0&pid=24
+Disallow: /reviews.php/
+Disallow: /blog/topics/
+Disallow: /blog/tags/
+Disallow: /blog/wp-content/plugins/
+Disallow: /create_account_success.php/
+Disallow: /error_log
+Disallow: /shopping_cart.php
+
+User-Agent: Googlebot
+Allow: .js
+Allow: .css
+
+User-agent: Yandex
+Disallow: / 
+
+sitemap: http://nameplatesinternational.com.au/sitemap.xml
+

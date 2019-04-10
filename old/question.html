@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>popup</title>
+
+<style type="text/css">
+
+.popup_bg{
+	width:631px;
+	height:360px;
+	background-color:#a12422;
+	box-shadow: 0px 0px 5px #888888;
+	border-radius:5px;
+	margin:0 auto;
+	}
+.top{ width:631px; text-align:center; padding:15px 0px 0px 0px;}
+.top h2{ font-size:24px; font-weight:bold; color:#FFF; margin:0px; padding:0px;}
+.top h2 span{ font-size:24px; font-weight:bold; color:#fbfe00; margin:0px; padding:0px;}
+.top h6{ font-size:12px; font-weight:normal; color:#FFF; margin:0px; padding:10px 0px 0px 0px;}
+.qform table{width:520px; margin-left:77px; margin-top:7px;}
+.qform table span{color:#F00;}
+.qform td{ vertical-align:middle;}
+.qform td.lable{width:85px; font-size:18px; font-weight:bold;color:#FFF;}
+.qform td input{border:none; height:20px}
+.qform td checkbox{ margin:0px; padding:0px; vertical-align:middle;}
+.qform textarea{
+	width:470px;
+	height:74px;
+	padding:5px;
+	background-color:#ffffff;
+	border:1px solid #a1a1a1;
+	border-radius:4px;
+    -moz-border-radius:3px; /* Old Firefox */}
+.popup_send_btn {
+	width:90px;
+    height:25px;
+	float:right;
+	margin-right:32px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#a12422;
+	line-height:25px;
+	background-color:#ffffff;
+	border:1px solid #a1a1a1;
+	border-radius:3px;
+}
+
+.myForm td, input, select, textarea, checkbox  {
+	font-family: tahoma;
+	font-size: 12px;
+}
+
+.required {
+	color: red;
+}
+	
+</style>
+
+</head>
+
+<body>
+
+<div class="popup_bg">
+<div class="top">
+<h2>Do you need help? Please Call us on <span>02 8003 5046</span></h2>
+<h6>Or leave a message with your question, one of our sales consultant will come back to you shortly</h6>
+</div>
+
+
+<form method="post" action="http://namebadgesinternational.com/eNews-NBi/form.php?form=9" id="frmSS9" onsubmit="return CheckForm9(this);">
+
+<div class="qform">
+
+<table border="0">
+<tr><td class="lable">Name<span>*</span></td><td style="width:160px;"><input type="text" name="CustomFields[35]" id="CustomFields_35_9" value=""></td><td style="width:25px;"></td>
+<td style="width:250px; font-size:13px; font-weight:bold; color:#c9d5c9;">How do you prefer to be contacted?</td></tr>
+
+<tr ><td class="lable">Email<span>*</span></td><td><input type="text" name="email" value="" /></td><td></td><td ><div style="margin:0px; padding:0px;"><div style=" float:left; margin-right:5px;"> <input type="checkbox" id="CustomFields[36_9]_Email" name="CustomFields[36][]" value="Email"></div><div style="font-size:14px;float:left; font-weight:bold; color:#c9d5c9; vertical-align:middle; padding-top:5px;"> Email*</div></div></td></tr>
+
+<tr><td class="lable">Phone<span>*</span></td><td><input type="text" name="CustomFields[4]" id="CustomFields_4_9" value="" ></td><td></td><td ><div style="margin:0px; padding:0px;"><div style=" float:left; margin-right:5px;"> <input type="checkbox" id="CustomFields[36_9]_Phone" name="CustomFields[36][]" value="Phone"></div><div style="font-size:14px;float:left; font-weight:bold; color:#c9d5c9; vertical-align:middle; padding-top:5px;"> Phone*</div></div></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td colspan="4" style="font-size:12px; font-weight:bold; color:#FFF;">Enter the security code shown:</td></tr>
+
+<tr><td colspan="4">
+	
+	<script type="text/javascript">
+// <![CDATA[
+	if (!Application) var Application = {};
+	if (!Application.Page) Application.Page = {};
+	if (!Application.Page.ClientCAPTCHA) {
+		Application.Page.ClientCAPTCHA = {
+			sessionIDString: '',
+			captchaURL: [],
+			getRandomLetter: function () { return String.fromCharCode(Application.Page.ClientCAPTCHA.getRandom(65,90)); },
+			getRandom: function(lowerBound, upperBound) { return Math.floor((upperBound - lowerBound + 1) * Math.random() + lowerBound); },
+			getSID: function() {
+				if (Application.Page.ClientCAPTCHA.sessionIDString.length <= 0) {
+					var tempSessionIDString = '';
+					for (var i = 0; i < 32; ++i) tempSessionIDString += Application.Page.ClientCAPTCHA.getRandomLetter();
+					Application.Page.ClientCAPTCHA.sessionIDString.length = tempSessionIDString;
+				}
+				return Application.Page.ClientCAPTCHA.sessionIDString;
+			},
+			getURL: function() {
+				if (Application.Page.ClientCAPTCHA.captchaURL.length <= 0) {
+					var tempURL = 'http://namebadgesinternational.com/eNews-NBi/admin/resources/form_designs/captcha/index.php?c=';
+					
+											tempURL += Application.Page.ClientCAPTCHA.getRandom(1,1000);
+													tempURL += '&ss=' + Application.Page.ClientCAPTCHA.getSID();
+												Application.Page.ClientCAPTCHA.captchaURL.push(tempURL);
+									}
+				return Application.Page.ClientCAPTCHA.captchaURL;
+			}
+		}
+	}
+
+	var temp = Application.Page.ClientCAPTCHA.getURL();
+	
+	for (var i = 0, j = temp.length; i < j; i++) { 
+		
+		document.getElementById('captcha-img').innerHTML = '<img src="' + temp[i] + '" alt="img' + i + '" />';
+	}
+	
+// ]]>
+</script>
+<div id="captcha-img" style="width:100px; background-color:#FFF; margin-bottom:5px;"></div>
+<input type="text" name="captcha" style="width:100px;" value="" />
+	<br>
+</td></tr>
+
+<tr><td colspan="4" style="font-size:12px; font-weight:bold; color:#FFF;">Please leave a message with your question:</td></tr>
+
+<tr><td colspan="4">
+<textarea name="CustomFields[37]" id="CustomFields_37_9"></textarea>
+</td></tr>
+
+<tr><td colspan="4"> <input class="popup_send_btn" type="submit" value="Send" /></td></tr>
+
+</table>
+
+</div>
+
+</form>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+			function CheckMultiple9(frm, name) {
+				for (var i=0; i < frm.length; i++)
+				{
+					fldObj = frm.elements[i];
+					fldId = fldObj.id;
+					if (fldId) {
+						var fieldnamecheck=fldObj.id.indexOf(name);
+						if (fieldnamecheck != -1) {
+							if (fldObj.checked) {
+								return true;
+							}
+						}
+					}
+				}
+				return false;
+			}
+		function CheckForm9(f) {
+			var email_re = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
+			if (!email_re.test(f.email.value)) {
+				alert("Please enter your email address.");
+				f.email.focus();
+				return false;
+			}
+		
+			var fname = "CustomFields_35_9";
+			var fld = document.getElementById(fname);
+			if (fld.value == "") {
+				alert("Please enter a value for field Name");
+				fld.focus();
+				return false;
+			}
+		
+			var fname = "CustomFields_4_9";
+			var fld = document.getElementById(fname);
+			if (fld.value == "") {
+				alert("Please enter a value for field Phone");
+				fld.focus();
+				return false;
+			}
+			
+			if (f.captcha.value == "") {
+				alert("Please enter the security code shown");
+				f.captcha.focus();
+				return false;
+			}
+		
+		return true;
+		}
+		
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* CDS_styles */
+
+/*********************/
+/* cds_index.tpl.php */
+/*********************/
+
+TD.cds_pageHeading, DIV.cds_pageHeading {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1E6FB4;
+  padding-top: 5px;
+}
+
+TD.cds_category_description, P.cds_category_description {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+DIV.cds_header_img {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+/***********************/
+/* SubCategory Listing */
+/***********************/
+
+TD.cds_listing_category_title {
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin:0;
+  font:bold 14px Tahoma, Verdana, sans-serif;
+  color: #1E6FB4;
+}
+
+TD.cds_listing_category_title a {
+  color: #1E6FB4;
+}
+
+TD.cds_listing_category_blurb {
+  font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align:justify;
+  color:#000;
+}
+
+TD.cds_listing_category_img {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+}
+
+TD.cds_listing_category_content {
+  padding-top: 5px;
+}
+
+/****************/
+/* Page Listing */
+/****************/
+
+TD.cds_listing_pages_title {
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin:0;
+  font:bold 14px Tahoma, Verdana, sans-serif;
+  color: #1E6FB4;
+}
+
+TD.cds_listing_pages_title a {
+  color: #1E6FB4;
+}
+
+TD.cds_listing_pages_blurb {
+  font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+  padding-left: 0px;
+  padding-right: 10px;
+  text-align:justify;
+  color:#000;
+}
+
+TD.cds_listing_pages_img {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+}
+
+TD.cds_listing_pages_content {
+  padding-top: 5px;
+}
+
+/***************/
+/* Page Detail */
+/***************/
+
+DIV.cds_pages_body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+/******************/
+/* Product Insert */
+/******************/
+
+TD.attach_product {
+  float:right;
+  margin:5px;
+  margin-right:20px;
+  padding:10px;
+  border:1px solid #ccc;
+  clear:both;
+}
+
+DIV.cds_product_name {
+  font:normal 12px Verdana, Arial, Helvetica, sans-serif;
+  color: #1E6FB4;
+  font-weight: bold;
+}
+
+DIV.cds_product_name a { color: #1E6FB4; background: inherit; }
+
+
+TD.cds_product_buy, DIV.cds_product_buy {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+TD.cds_product_buy, DIV.cds_product_buy a { color:#000000; background: inherit;}
+
+TD.cds_product_insert_width {
+ /* width: 100px; */
+}
+
+DIV.cds_product_price {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+DIV.cds_product_price a { background: inherit;}
+
+
+DIV.cds_product_img {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+
+}
+
+/********************/
+/* Product Info RCI */
+/********************/
+
+TD.cds_pInfoContentBoxHeading {
+  font-family : Verdana, Arial, sans-serif;
+  font-size : 10px;
+  font-weight : bold;
+  background : #bbc3d3;
+  color : #ffffff;
+}
+
+TD.cds_pInfoContentBox {
+  font-family : Verdana, Arial, sans-serif;
+  font-size : 12px;
+}
+
+/* CDS_style EOF */
+/************************/
+/* CDS HOME PAGE MODULE */
+/************************/
+.cds_home_title, a.cds_home_title {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1E6FB4;
+  text-decoration:none;
+}
+a.cds_home_title:hover {
+  color: #0451BB;
+  text-decoration:underline;
+}
+span.cds_home_blurb, span.cds_home_body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+td.cds_home_image img {
+  border:0;
+  margin:3px;
+  margin-top:0;
+}
+span.cds_home_readmore {
+  color:#A83345;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  text-decoration:none;
+}
+td.cds_home_spacer {
+  height:1px;
+  background: #CCC;
+}

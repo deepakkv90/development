@@ -1,0 +1,1 @@
+[17-Feb-2010 14:46:44] PHP Notice:  Use of undefined constant DB_ERROR_13 - assumed 'DB_ERROR_13' in /home/ajparkes/public_html/64/install/includes/functions/database.php on line 222

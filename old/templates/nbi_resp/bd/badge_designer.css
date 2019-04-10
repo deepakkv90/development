@@ -1,0 +1,516 @@
+/*For Custom Font*/
+/*@font-face {
+  font-family: 'Arial Bold';
+  src: url('fonts/arialb.eot?') format('eot'), url('fonts/arialb.woff') format('woff'), url('fonts/arialb.ttf') format('truetype');
+}
+*/
+/* Font embedding completed */
+
+.badge_border_selector {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 4px;
+  border: 1px dotted gray;
+}
+
+.badge_designer_holder {
+	float: left;
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+.badge_box {
+	background: url(images/badge_blocks_bg.png) repeat-x left bottom;
+	float: left;
+	width: 100%;
+	clear: both;
+	padding: 20px 0 25px;
+}
+  
+.content .badge_box .badge_shapes span.title { 
+	float: left;
+	width: 100%;
+}	
+
+.content .badge_box span.title { 
+	display: block;
+	float: left;
+	width: 156px;
+	padding: 5px 0; 
+}
+
+
+#badge_editor span {
+	float: left;
+	width: 100%;
+	padding: 4px 0;
+}
+	
+#badge_editor label {
+	width: 40px;
+	float: left;
+	}
+
+#badge_editor input, #badge_editor select, .design_name input, .purchase_number input {
+	background: #f4f4f4;
+	border: 1px solid #a5acb2;
+	color: #000;
+	height: 15px;
+	padding: 4px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#badge_text {
+	width: 30%;
+	/*height: 100px;*/ /*Modified Sep 30, 2010 */
+  margin: 4px;
+}
+  
+#badge_editor select {
+	background: #f4f4f4;
+	border: 1px solid #a5acb2;
+	color: #000;
+	height: 22px;
+	padding: 2px 4px;
+	font-family: Verdana;
+	font-size: 12px;
+	width: 188px;
+}
+  
+#badge_editor #badge_font_size {width: 85px;}
+
+.badge_text {
+	cursor: pointer;
+	position: absolute;
+  padding: 2px;
+}
+
+.badge_logo {
+	cursor: pointer;
+	z-index: 9999;
+	position: absolute;
+  padding: 2px;
+}
+
+#ajax_upload {z-index: 1;}
+
+.badge_shape {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.badge_shape_selected { opacity: 1;}
+
+.badge_designer {
+	font-family: Arial;
+	position: relative;
+	z-index:1;
+}
+
+.content .tabs li { 
+	float: left;
+	padding-right: 20px;}
+
+.badge_editor, .content_in_tabs {
+	float: right;
+	width: 230px;
+}
+
+div.badge_editor {
+	margin-top: 20px;
+}
+
+.tab_current {
+	color: blue;
+}
+
+.color_set {
+	float: left;
+	width: 100%;
+	padding: 6px 0;
+	}
+
+.color_set a {
+	float: right;
+	display: block;
+	margin: 5px 0 0 5px;
+	}
+	
+.color_set span {
+	float: left;
+	line-height: 27px;
+	display: block;
+	padding: 0 0 0 5px;	
+	margin-top: 3px;
+	}	
+	
+.color_set span b { padding-left: 3px;}
+	
+.color_set input {
+	background: #f4f4f4;
+	border: 1px solid #a5acb2;
+	color: #000;
+	height: 15px;
+	width: 27px;
+	padding: 2px;
+	margin-right: 1px;
+	font-family: Verdana;
+	font-size: 12px;
+}
+	
+.silver_color { color: silver;}	
+.gold_color { color: gold;}	
+	
+.silver_color a {
+	width: 62px;
+	height: 27px;
+	display: block;
+	background: url(images/silver_color.png) no-repeat;}
+	
+.gold_color a {
+	width: 62px;
+	height: 27px;
+	display: block;
+	background: url(images/gold_color.png) no-repeat;}
+  
+.badge_and_buttons {	
+	float: left;
+	width: 475px;
+}
+
+.badge_edit_buttons {
+	padding: 10px 0;
+  /*height: 30px;*/
+}
+	
+.badge_edit_buttons input  {
+	color: #454545;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin: 0 3px;
+	border: none;
+	height: 35px;
+	float: left;
+	margin-right: 15px;
+}
+
+.apply_color {
+	background: url(images/add_text_bg.png) no-repeat;
+	width: 96px; 
+  cursor: pointer;
+}
+
+/* Modified Oct 20, 2010 */
+#badge_add_logo {
+	background: url(images/add_your_logo.gif) no-repeat;
+	width: 145px; 
+  	cursor: pointer;
+}
+#badge_delete_text, #badge_delete_names {
+	background: url(images/delete.gif) no-repeat;
+	width: 80px; 
+  	cursor: pointer;
+}
+
+#badge_help {
+	background: url(images/help.png) no-repeat;
+	width: 40px; 
+  	cursor: pointer;
+	height:40px;
+}
+
+#badge_add_names {
+	background: url(images/upload_bulk_text.png) no-repeat;
+	width: 173px; 
+  	cursor: pointer;
+}
+
+#design_form #badge_add_text .apply_color {
+	background: url(images/add_text.gif) no-repeat;
+	width: 120px; 
+    cursor: pointer;
+}
+
+/*
+.badge_add_names  {		
+	height: 36px;
+	background: url(images/button140.gif) no-repeat 0 3px;	
+	width: 166px; 
+    cursor: pointer;
+}
+
+
+.badge_add_names2  {		
+	height: 36px;
+	background: url(images/button1402.gif) no-repeat 0 3px;
+	width: 166px; 
+    cursor: pointer;
+}
+*/
+.badge_add_names input  {
+	color: #454545;
+	font-size: 14px;
+	font-weight: bold;	
+	border: none;
+	height: 36px;
+	float: left;
+}
+
+/*
+.badge_delete_names  {		
+	height: 36px;
+	background: url(images/button1402.gif) no-repeat 0 3px;
+	width: 120px; 
+    cursor: pointer;
+}
+*/
+
+.badge_delete_names input  {
+	color: #454545;
+	font-size: 14px;
+	font-weight: bold;	
+	border: none;
+	height: 36px;
+	float: left;
+}
+	
+.color_set .apply_color {
+	background: url(images/apply.png) no-repeat;
+	width: 110px;
+	color: #454545;
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin: 0 3px;
+	border: none;
+	height: 36px;
+	float: left;
+	margin-right: 15px;	}
+
+.badge_shapes {
+	width: 100%;
+	float: left;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+.badge_shapes img { 
+	vertical-align: top;
+	margin: 5px 35px 0 0;
+  }
+ 
+.badge_editor_label { 
+  font-family: Arial;
+}
+
+.badge_text_default {
+  display: none;
+}
+
+.notvisible { visibility: hidden;}
+
+.badge_border_color {
+	background: url(images/badge_color.png) no-repeat;
+	float: left;
+	width: 62px;
+	height: 27px;
+	margin: 3px;
+	cursor: pointer;
+}
+
+.badge_border_color .badge_selected, .badge_border_color:hover, .badge_border_color.iehover {
+	background: url(images/badge_color_hover.png) no-repeat;
+	cursor: pointer;
+}
+
+#badge_bg_color {
+	float: left;
+	width: 100%;
+	display: block;}
+
+.badge_bg_color, .badge_color {
+	background: url(images/color_box.png) no-repeat;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 1px;
+	cursor: pointer;
+}
+
+#badge_bg_brush_gold {
+	background: url(images/s_gold.png) no-repeat;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 1px;
+	cursor: pointer;
+}
+#badge_bg_brush_silver {
+	background: url(images/s_silver.png) no-repeat;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 1px;
+	cursor: pointer;
+}
+
+.badge_bg_color:hover, .badge_color:hover, .badge_bg_color.iehover, .badge_color.iehover {
+	background: url(images/color_box_hover.png) no-repeat;
+	cursor: pointer;	
+}
+
+.badge_color_pms {
+	cursor: pointer;
+}
+
+#badge_color div { margin-top: -3px;}
+
+#badge_designer .badge_selected { 
+  z-index: 9998; 
+  border: 2px dotted gray;
+  padding: 0px;
+}
+
+#badge_designer {margin: -3px 0 0 0;}
+
+#checkboxDiv input {
+	margin: 0;
+  padding: 0;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	
+}
+
+.checkboxOn, .checkboxOff, .checkboxOn2, .checkboxOff2, .checkboxOn3, .checkboxOff3 {
+	float: right;
+	width: 28px;
+	height: 29px;
+  cursor: pointer;
+}
+	
+.checkboxOn {
+  padding-right: 5px;
+  background: url(images/bold.gif) no-repeat 0 -3px;
+}
+
+.checkboxOff {
+  padding-right: 5px;
+  background: url(images/bold.gif) no-repeat 0 -3px;
+}
+
+.checkboxOn2 {
+  padding-right: 5px;
+  background: url(images/italic.gif) no-repeat 0 -3px;	
+}
+
+.checkboxOff2 {
+  padding-right: 5px;
+  background: url(images/italic.gif) no-repeat 0 -3px;
+}
+
+.checkboxOn3 {
+  background: url(images/underline.gif) no-repeat 0 -3px;	
+}
+
+.checkboxOff3 {
+  background: url(images/underline.gif) no-repeat 0 -3px;
+}
+
+#badge_submit .submit {
+	float: right;
+	height: 38px;
+	border: none;
+	font-weight: bold;
+	background: url(images/continue_to_cart.gif) no-repeat 0 3px;
+	width: 200px; 
+  cursor: pointer;
+}
+	
+.design_name { 	
+	float: left;
+	padding-left: 180px;
+	padding-top: 6px;
+	width: 315px;
+}
+.purchase_number { 	
+	float: left;
+	padding-left: 262px;
+	padding-top: 6px;
+	width: 314px;
+}
+	
+#multi_size { display: none;}
+#preview_badge  { display: none;}
+
+.badge_edit_text label {
+  /*margin-left:4px;*/
+  font-size:12px;
+}
+
+table.preview_legend th {
+  text-align: left;
+}
+table.preview_legend tr td {
+  padding: 0px;
+}
+
+
+/*Modified Oct 13, 2010*/
+#badge_text_array_default {
+  display: none;
+}
+
+.badge_text_array, .update_text_array { float:left; margin:2px; width:122px; height:22px; }
+
+#badge_text_add_lines, #badge_text_confirm, .update_text_confirm {
+	height: 30px; border: none; cursor: pointer;
+}
+
+#badge_text_confirm { 
+	background: url(images/confirm.gif) no-repeat 0 2px;
+	width: 85px; 	
+}
+
+.update_text_confirm {	
+	background: url(images/confirm_changes.png) no-repeat 0 2px;
+	clear:both; float:left; width:160px;
+}
+
+#badge_text_add_lines {
+	background: url(images/add_text_field.gif) no-repeat 0 2px; 		
+	width: 80px;
+}
+
+#text_list_default, #text_list_edit_default, #text_list_delete_default, #badge_container_default { display:none; }
+
+.text_list, .text_list_delete, .text_list_edit { 
+	float:left; width:122px; 
+	height:22px; font-size:12px;
+}
+
+.text_list { padding:4px; }
+
+.text_list_delete {
+	background: url(images/delete_text.gif) no-repeat 0 2px; 		
+	width: 80px; height: 30px; border: none; cursor: pointer;	
+}
+
+.text_list_edit {
+	background: url(images/edit.gif) no-repeat 0 2px;
+	width: 80px; height: 30px; border: none; cursor: pointer; margin-right:5px;
+}
+
+#list_area, #list_area_command { padding:3px; }
+
+.clean { clear:both; }
+
+#badge_note { font-size:11px; color:#0099CC;  }
+
+.badge_name img { width:0; height:0; }
+
+.badge_text_color_pms { cursor:pointer; }
+
+.black_text_mini { font-size:9px; }
+
+.pms_panel { width: 230px; height: 75px; overflow-y: scroll; border-top:1px solid #EFEFEF; border-left:1px solid #EFEFEF; border-bottom:1px solid #EFEFEF; }

@@ -1,0 +1,5 @@
+The way this file is now, there are 2 links to "wishlist help"
+
+The 1st is a pop-up window and the 2nd is a regular page.
+
+Try them and see which you like better and then comment out the link you do not want.  Line 60 is the popup link and line 61 is the regular link.
